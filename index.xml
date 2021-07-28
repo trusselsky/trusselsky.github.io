@@ -75,7 +75,7 @@ F.eks at de ikke får informasjon om at det er en sårbarhet knyttet til et spes
 &lt;li&gt;Tiltak som kan gjøres&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;hva-er-nettsiden-laget-av&#34;&gt;Hva er nettsiden laget av?&lt;/h3&gt;
-&lt;p&gt;Github pages + Hugo, bygging skjer via GitHub actions. Ikke så mye mer spennende en det..&lt;/p&gt;
+&lt;p&gt;Github pages + Hugo, bygging skjer via GitHub actions + Cloudflare som leverer frontend. Ikke så mye mer spennende en det..&lt;/p&gt;
 &lt;h3 id=&#34;hvordan-kan-jeg-bidra&#34;&gt;Hvordan kan jeg bidra?&lt;/h3&gt;
 &lt;p&gt;Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som &amp;ldquo;Issues&amp;rdquo;
 Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;, jeg biter ikke..&lt;/p&gt;
