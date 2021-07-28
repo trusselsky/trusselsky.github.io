@@ -1,0 +1,138 @@
+baseURL: "https://trusselsky.github.io/"
+title: Trusselsky
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-DJPH0T3RNX
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Trusselsky
+    description: "Informasjonsdeling rundt IT-sikkerhet"
+    keywords: [Trusselsky, IT-sikkerhet, Cloud Sikkerhet, Sikkerhet IT, Sikre Skytjenester, ThreatCloud, Sikkerhet og informasjonsteknologi]
+    author: Marius Sandbu
+    # author: ["Me", "You"] # multiple authors
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: light # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/static/favicon.ico"
+        favicon16x16: "/static/favicon.ico"
+        favicon32x32: "/static/favicon.ico"
+        apple_touch_icon: "/static/favicon.ico"
+        safari_pinned_tab: "/static/favicon.ico"
+
+    label:
+        text: "Hjem"
+
+
+    # profile-mode
+    profileMode:
+        enabled: true # needs to be explicitly set
+        title: Informasjonsdeling av rundt IT sikkerhet
+        subtitle: "En lettvekt varslingstjeneste for digitale sikkerhetstrusler"
+        imageUrl: "https://i.imgur.com/fVRpZdZ.png"
+        imageWidth: 200
+        imageHeight: 200
+        imageTitle: Trusselsky
+        buttons:
+            - name: Nyheter
+              url: posts
+            - name: Kategorier
+              url: tags
+            - name: FAQ
+              url: faq
+            - name: Søk
+              url: search
+            - name: Artikler
+              url: artikler
+
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Trusselsky - Hovedside"
+        Content: Trusselsky
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/trusselsky"
+        - name: github
+          url: "https://github.com/trusselsky"
+        - name: rss
+          url: "https://trusselsky.github.io/index.xml"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/trusselsky/trusselsky.github.io"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: om
+          name: om
+          url: /om
+          weight: 30
+        - identifier: blog
+          name: twitter
+          url: https://twitter.com/trusselsky
+          weight: 20
+        - identifier: påmelding
+          name: nyhetsbrev
+          url: /signup
+          weight: 10
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
