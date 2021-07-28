@@ -5,7 +5,7 @@
     <link>https://trusselsky.github.io/</link>
     <description>Recent content on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 27 Jul 2021 16:33:39 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jul 2021 15:09:25 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -79,6 +79,35 @@ F.eks at de ikke får informasjon om at det er en sårbarhet knyttet til et spes
 &lt;h3 id=&#34;hvordan-kan-jeg-bidra&#34;&gt;Hvordan kan jeg bidra?&lt;/h3&gt;
 &lt;p&gt;Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som &amp;ldquo;Issues&amp;rdquo;
 Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;, jeg biter ikke..&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Vanligste sårbarhetene i 2020/2021</title>
+      <link>https://trusselsky.github.io/posts/mestutnyttets%C3%A5rbarheter/</link>
+      <pubDate>Wed, 28 Jul 2021 15:09:25 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/mestutnyttets%C3%A5rbarheter/</guid>
+      <description>&lt;p&gt;U.S. Cybersecurity og Infrastructure Security Agency (CISA) har sammen laget en liste med de (top 30) vanligste sårbarhetene som blir utnyttet i angrep, basert på historiske data fra 2020 (samt sålangt i 2021)&lt;/p&gt;
+&lt;p&gt;Du kan se listen over de ulike sårbarheten her &amp;ndash;&amp;gt; &lt;a href=&#34;https://us-cert.cisa.gov/ncas/alerts/aa21-209a&#34;&gt;https://us-cert.cisa.gov/ncas/alerts/aa21-209a&lt;/a&gt; PDF utgave her &amp;ndash;&amp;gt; &lt;a href=&#34;https://us-cert.cisa.gov/sites/default/files/publications/AA21-209A_Joint%20CSA_Top%20Routinely%20Exploited%20Vulnerabilities.pdf&#34;&gt;https://us-cert.cisa.gov/sites/default/files/publications/AA21-209A_Joint%20CSA_Top%20Routinely%20Exploited%20Vulnerabilities.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sårbarhetene kommer fra en ulike rekke leverandører. Basert på historikk data fra 2020, er følgende de meste utnyttet sårbarhetene:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Citrix - CVE-2019-19781 - arbitrary code execution&lt;/li&gt;
+&lt;li&gt;Pulse - CVE 2019-11510 - arbitrary file reading&lt;/li&gt;
+&lt;li&gt;Fortinet - CVE 2018-13379 - path traversal&lt;/li&gt;
+&lt;li&gt;F5- Big IP - CVE 2020-5902 - remote code execution (RCE)&lt;/li&gt;
+&lt;li&gt;MobileIron - CVE 2020-15505 - RCE&lt;/li&gt;
+&lt;li&gt;Microsoft - CVE-2017-11882 - RCE&lt;/li&gt;
+&lt;li&gt;Atlassian - CVE-2019-11580 - RCE&lt;/li&gt;
+&lt;li&gt;Drupal - CVE-2018-7600 - RCE&lt;/li&gt;
+&lt;li&gt;Telerik - CVE 2019-18935 - RCE&lt;/li&gt;
+&lt;li&gt;Microsoft - CVE-2019-0604 - RCE&lt;/li&gt;
+&lt;li&gt;Microsoft - CVE-2020-0787 - elevation of privilege&lt;/li&gt;
+&lt;li&gt;Microsoft - CVE-2020-1472 - elevation of privilege&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vi så blant annet at Citrix sårbarheten alene kunne påvirke opptil 850 organisasjoner i Norge. Samt blant annet CVE-2021-26855 (Microsoft Exchange) som ble utnyttet mot Stortinget som gjorde det mulig for angripere å hente ut Epost kontoer fra den lokale Exchange databasen ved å kjøre egendefinert kode mot OWA/EXC.&lt;/p&gt;
+&lt;p&gt;I 2021 fortsetter angripere å benytte seg av målrettet sårbarheter mot enheter/tjenester som er offentlig tilgjengelig. Blant de som er svært utnyttet så langt i 2021, er sårbarheter i Microsoft, Pulse, Accellion, VMware og Fortinet.&lt;/p&gt;
+&lt;p&gt;De har også kompilert en liste over de ulike CVEene med tiltak man kan gjøre for å fikse opp i de ulike sårbarhetene.&lt;/p&gt;
 </description> 
     </item>
     
