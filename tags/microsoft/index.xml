@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on Trusselsky</title>
+    <link>https://trusselsky.github.io/tags/microsoft/</link>
+    <description>Recent content in Microsoft on Trusselsky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Jul 2021 16:33:39 +0200</lastBuildDate>
+    
+	<atom:link href="https://trusselsky.github.io/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PrintNightmare - CVE-2021-34527</title>
+      <link>https://trusselsky.github.io/posts/printnightmare/</link>
+      <pubDate>Tue, 27 Jul 2021 16:33:39 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/printnightmare/</guid>
+      <description>&lt;h3 id=&#34;hva-er-det&#34;&gt;Hva er det?&lt;/h3&gt;
+&lt;p&gt;Den 30 Juli, ble det avdekket en sårbarhet i Print Spooler tjenesten i Windows. Som er en innebygget tjeneste i Windows som håndterer utskrift samt er også ansvarlig for driver innstallasjon knyttet til oppkobling av skrivere på Windows operativsystem.&lt;/p&gt;
+&lt;p&gt;Det har kommet en del informasjon knyttet til denne sårbarheten samtidig som den er veldig omfattende og dekkes av flere CVE&amp;rsquo;er.&lt;/p&gt;
+&lt;p&gt;1: CVE-2021-1675 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-1675&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-1675&lt;/a&gt;) som ikke er sårbarheten dubbet PrintNightmare. Microsoft kom med egen patch for denne med månedlig oppdateringer i Juli.&lt;br&gt;
+2: CVE-2021-34527 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527&lt;/a&gt;) har også kommet med egne patcher for de ulike operativsystemene.&lt;br&gt;
+3: CVE-2021-34481 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34481&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34481&lt;/a&gt;) ny sårbarhet for lokal eskalering av tilganger. (Egen artikkel, kom 16 Juli)&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-versjoner-gjelder-det&#34;&gt;Hvilken versjoner gjelder det?&lt;/h3&gt;
+&lt;p&gt;Denne sårbarheten gjelder alle Windows Operativsystem (både klient og Server) fra Windows 7/2008 til Windows 10/2019.&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-konsekvenser-har-det&#34;&gt;Hvilken konsekvenser har det?&lt;/h3&gt;
+&lt;p&gt;Denne sårbarheten kan gjøre det mulig å kompromitere maskiner i gitte scenarioer hvor man har Print Spooler tjenesten kjørende. Dette kan da være nettverksbaserte maskiner som domene kontrollere eller andre typer maskiner. Print Spooler tjenesten kjører som standard. Svakheten er definert slik at man kan lage en egendefinert DLL fil (som gjenspeiler en Print Driver) som man kan få print tjenesten i Windows til å importere under SYSTEM kontekst om Remote Printing tjenestne er aktivert. Denne egendefinerte DLL filen kan f.eks inneholde skjulte kommandoer for å tildele f.eks lokal administrator tilgang.  Basert på informasjon vi har tilgjengelig er det ingen aktive angrep som benytter seg av denne angrepsvektoren ennå. Det krever tilgang til f.eks en maskin innenfor domenet for å kunne utnytte seg av sårbarheten som en da autentisert bruker.&lt;/p&gt;
+&lt;h3 id=&#34;løsningerworkarounds&#34;&gt;Løsninger/Workarounds&lt;/h3&gt;
+&lt;p&gt;Microsoft har kommet med sikkerhetsoppdateringer som løser sårbarheten. Men pga flere sårbarheter som nå blir avdekket i Print Spooler tjenesten, samt generell råd er at man deaktiverer Print Spooler tjenesten på maskiner som ikke har behov for den, som f.eks Domene kontrollere.  Merk at sikkerhetsoppdateringene fra Microsoft krever omstart av maskinene som blir oppdatert.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PowerShell eksempel&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Stop-Service -Name Spooler -Force
+Set-Service -Name Spooler -StartupType Disabled
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Merk at ved å deaktivere Print Spooler tjenesten vil stoppe muligheten for å kjøre print jobber, dette omfatter også f.eks konvertering til PDF. For maskiner hvor man har behov for print som f.eks Citrix servere eller lokale arbeidsstasjoner er det anbefalt at man deaktiverer inbound remote print for å kunne&lt;/p&gt;
+&lt;h3 id=&#34;mer-informasjon&#34;&gt;Mer informasjon&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Eksempler på exploit &lt;a href=&#34;https://github.com/nemo-wq/PrintNightmare-CVE-2021-34527&#34;&gt;https://github.com/nemo-wq/PrintNightmare-CVE-2021-34527&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Her er også et eksempel på hvordan man kan koble opp til en ekstern fiktiv print tjeneste som deretter gir System tilganger på maskinen. Merk at skaperen bak Mimikatz skriver også hvordan man kan begrense dette til kun godkjente systemer også via Group Policy.
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Want to test &lt;a href=&#34;https://twitter.com/hashtag/printnightmare?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#printnightmare&lt;/a&gt; (ep 4.x) user-to-system as a service?🥝&lt;br&gt;(POC only, will write a log file to system32)&lt;br&gt;&lt;br&gt;connect to \\&lt;a href=&#34;https://t.co/6Pk2UnOXaG&#34;&gt;https://t.co/6Pk2UnOXaG&lt;/a&gt; with&lt;br&gt;- user: .\gentilguest&lt;br&gt;- password: password&lt;br&gt;&lt;br&gt;Open &amp;#39;Kiwi Legit Printer - x64&amp;#39;, then &amp;#39;Kiwi Legit Printer - x64 (another one)&amp;#39; &lt;a href=&#34;https://t.co/zHX3aq9PpM&#34;&gt;pic.twitter.com/zHX3aq9PpM&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🥝 Benjamin Delpy (@gentilkiwi) &lt;a href=&#34;https://twitter.com/gentilkiwi/status/1416429860566847490?ref_src=twsrc%5Etfw&#34;&gt;July 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Serious Sam - CVE-2021-36934</title>
+      <link>https://trusselsky.github.io/posts/serioussam/</link>
+      <pubDate>Mon, 26 Jul 2021 09:57:04 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/serioussam/</guid>
+      <description>&lt;h3 id=&#34;hva-er-det&#34;&gt;Hva er det?&lt;/h3&gt;
+&lt;p&gt;Den 19 Juli, ble det avdekket en sårbarhet i SAM (Security Account Manager) databasen i Windows 10 på nyere versjoner. Denne sårbarheten gjorde at brukerdatabasen kunne bli lest av ikke-administrator kontoer i Windows 10 under en gitt kontekst. Dette var kun mulig å gjøre om det fantes VSS (Volume Shadow Service) som oftest brukes for å lage lokale snapshots i Windows (som f.eks Previous Versions). Om man har f.eks backup tjenester som brukes mot Windows 10 klient maskiner vil den ofte bruke VSS for å lage snapshots. Samt f.eks System Restore funksjonen i Windows bruker VSS for å lage snapshosts.&lt;/p&gt;
+&lt;p&gt;Sårbarheten ble avdekket av Jonas Lyk (&lt;a href=&#34;https://twitter.com/jonasLyk/status/1417205166172950531&#34;&gt;https://twitter.com/jonasLyk/status/1417205166172950531&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-versjoner-gjelder-det&#34;&gt;Hvilken versjoner gjelder det?&lt;/h3&gt;
+&lt;p&gt;Dette gjelder Windows 10 (fra 1809 oppover) samt Windows Server 2019. Sårbarheten er kun mulig å utnytte om man har tilgang til å kjøre kode på det aktuelle systemet.&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-konsekvenser-har-det&#34;&gt;Hvilken konsekvenser har det?&lt;/h3&gt;
+&lt;p&gt;Om en klient maskin blir kompromitert samt har shadow copies lokalt på maskinen, kan en angriper bruke dette for å elevere seg selv til å bli lokal administrator. Eller hente ut informasjon om andre brukerkontoer som ligger igjen lokalt, som f.eks domene kontoer.&lt;/p&gt;
+&lt;h3 id=&#34;løsningerworkarounds&#34;&gt;Løsninger/Workarounds&lt;/h3&gt;
+&lt;p&gt;Microsoft har ikke kommet med patch ennå, men det finnes en workaround for å kunne løse opp i sårbarheten. Samtidig er det viktig å påpeke at sårbarheten ikke blir aktivt utnyttet ennå, men at Microsoft vil komme med en oppdatering fortløpende.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Begrens tilgang til SAM databasen, kjør CMD/PowerShell som Administrator icacls %windir%\system32\config*.* /inheritance:e&lt;/li&gt;
+&lt;li&gt;Slett tidligere Shadow Copies som ble laget før punkt 1 ble gjort. Her er mer informasjon knyttet til hvordan finne og slette Shadow Copies &amp;ndash;&amp;gt; &lt;a href=&#34;https://support.microsoft.com/en-gb/topic/kb5005357-delete-volume-shadow-copies-1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7&#34;&gt;https://support.microsoft.com/en-gb/topic/kb5005357-delete-volume-shadow-copies-1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mer-informasjon&#34;&gt;Mer informasjon&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft CVE-2021-36934 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36934&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36934&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Python PoC (&lt;a href=&#34;https://github.com/GossiTheDog/HiveNightmare&#34;&gt;https://github.com/GossiTheDog/HiveNightmare&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;video-av-exploit&#34;&gt;Video av Exploit&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5zdIq6t3DOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description> 
+    </item>
+    
+  </channel>
+</rss>

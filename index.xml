@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trusselsky</title>
+    <link>https://trusselsky.github.io/</link>
+    <description>Recent content on Trusselsky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Jul 2021 16:33:39 +0200</lastBuildDate>
+    
+	<atom:link href="https://trusselsky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hva er Trusselsky?</title>
+      <link>https://trusselsky.github.io/faq/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://trusselsky.github.io/faq/</guid>
+      <description>&lt;h3 id=&#34;hva-er-trusselsky&#34;&gt;Hva er Trusselsky?&lt;/h3&gt;
+&lt;p&gt;Hensikten bak Trusselsky er å ha en lettvekt tjeneste for informasjonsdeling knyttet til digitale sikkerhetstrusler, men uten at man må&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Betale $$$ for eksterne tjenester for varslinger&lt;/li&gt;
+&lt;li&gt;Abonere på X antall ulike leverandører knyttet til varslinger&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Men samtidig kunne få&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tilgang til informasjon knyttet til nye sårbarheter og andre sikkerhetsrisikoer.&lt;/li&gt;
+&lt;li&gt;Få mer målrettet informasjon i forhold til trusler, tiltak man kan gjøre.&lt;/li&gt;
+&lt;li&gt;Nyheter relatert til IT-sikkerhet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hvorfor-navnet-trusselsky&#34;&gt;Hvorfor navnet Trusselsky?&lt;/h3&gt;
+&lt;p&gt;ThreatCloud som var det tiltenkte orginale navnet er trademarket Checkpoint så derfor ble det på Norsk istedet&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;hva-er-ikke-trusselsky&#34;&gt;Hva er ikke Trusselsky?&lt;/h3&gt;
+&lt;p&gt;Trusselsky er kun ment til informasjonsdelding, dette erstatter ikke behovet for andre tjenester som.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sikkerhetsmonitorering&lt;/li&gt;
+&lt;li&gt;Sikkerhetsoppdateringer&lt;/li&gt;
+&lt;li&gt;Ressurser som gjennomfører punkt 1 og punkt 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Men er kun ment som et supplement til de som ønsker litt mer informasjon rundt hva som skjer på IT-sikkerhet.&lt;/p&gt;
+&lt;h3 id=&#34;hvordan-samler-dudere-inn-informasjon&#34;&gt;Hvordan samler du/dere inn informasjon?&lt;/h3&gt;
+&lt;p&gt;Vi benytter en del ulike informasjonskanaler som blir kvernet igjennom trakten å deretter videreformidlet blant annet.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Informasjon fra ulike leverandører (Cisco, Microsoft, CheckPoint, Fireeye, F-secure, Palo Alto, VMware)&lt;/li&gt;
+&lt;li&gt;Ulike Sosiale Medier&lt;/li&gt;
+&lt;li&gt;E-post fra andre sikkerhetsinstanser&lt;/li&gt;
+&lt;li&gt;RSS fra andre blogger og nettsider&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Høres ut som mye informasjon som må prosesseres å det er det, men dere vil bli overrasket over hvor mye fritid undertegnende har.&lt;/p&gt;
+&lt;h3 id=&#34;hvorfor-laget-du-trusselsky&#34;&gt;Hvorfor laget du Trusselsky?&lt;/h3&gt;
+&lt;p&gt;Etter å ha jobbet i IT en del år ser jeg at i mange sammenhenger er utfordringer knyttet til informasjonsflyt som gjør at organisasjoner blir utsatt for angrep.
+F.eks at de ikke får informasjon om at det er en sårbarhet knyttet til et spesifikt produkt eller tjeneste som en organisasjon benytter. Samtidig så er det for mange altfor mye informasjon å fordøye så derfor ønsket jeg å lage dette som en lettvekt måte å få ut nødvendig informasjon.&lt;/p&gt;
+&lt;h3 id=&#34;hvordan-fungerer-tjenesten&#34;&gt;Hvordan fungerer tjenesten?&lt;/h3&gt;
+&lt;p&gt;Det er egentlig veldig VELDIG&amp;hellip;enkelt, vi samler inn informasjon som vi deretter skriver om med litt mer utfyllende data (på Norsk) som deretter da blir tilgjengelig direkte via ulike informasjonskanaler. Så tanken bak det er å ha en felles informasjonskanal som dekker ulike leverandører i stedet for at man må følge med på mange ulike kanaler, eller at man bare ønsker å få litt mer informasjon.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RSS Feed fra nettsiden (Kan også filtrere basert på tjeneste/produkter/informasjon) hvor man kan benytte ulike RSS tjenester som f.eks Feedly til å få info. Dette kan gjøres enten basert på produkt/kategori/teknologi osv. Et eksempel her er å kategorisere på produkt. &lt;img loading=&#34;lazy&#34; src=&#34;https://i.imgur.com/ePezLVh.png&#34; alt=&#34;RSS&#34;  /&gt;
+&lt;/li&gt;
+&lt;li&gt;Abonnere på epost varsling (Påmelding kan justeres basert på produkt/tjeneste) styres via Mailchimp&lt;/li&gt;
+&lt;li&gt;Ulike sosiale medier (Twitter) &amp;ndash;&amp;gt; &lt;a href=&#34;https://twitter.com/trusselsky&#34;&gt;https://twitter.com/trusselsky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fremover vil det også komme push notification for varslinger (Se mer info om planer under &amp;ndash;&amp;gt; &lt;a href=&#34;https://github.com/trusselsky/trusselsky.github.io/issues&#34;&gt;https://github.com/trusselsky/trusselsky.github.io/issues&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hvordan-samler-dere-inn-informasjon-om-trusslene&#34;&gt;Hvordan samler dere inn informasjon om trusslene?&lt;/h3&gt;
+&lt;p&gt;Vi benytter ulike former for innsamling, mye kommer fra sosiale medier, oppdateringer fra ulike leverandører og ulike sikkerhets fora.&lt;/p&gt;
+&lt;h3 id=&#34;hvor-lagrer-dere-data&#34;&gt;Hvor lagrer dere data?&lt;/h3&gt;
+&lt;p&gt;Det som eventuelt er lagret av informasjon er via epost utsendinger som foregår automatisk når det kommer nye sårbarheter relatert til spesfikke produkter, alt av informasjon er publisert direkte via GitHub (Helt Sant! se her &amp;ndash;&amp;gt; ) &lt;a href=&#34;https://github.com/trusselsky/trusselsky.github.io&#34;&gt;https://github.com/trusselsky/trusselsky.github.io&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-informasjon-er-det-dere-formidler&#34;&gt;Hvilken informasjon er det dere formidler?&lt;/h3&gt;
+&lt;p&gt;Vi bruker ulike felt avhengig av informasjon som skal ut, de fleste artikler vi lager pleier å innholde en eller flere av følgende felter.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Leverandør + Produkt&lt;/li&gt;
+&lt;li&gt;CVE (Om finnes)&lt;/li&gt;
+&lt;li&gt;CVE Link til leverandør (om finnes)&lt;/li&gt;
+&lt;li&gt;Dato&lt;/li&gt;
+&lt;li&gt;Hva er det for noe, hvordan?&lt;/li&gt;
+&lt;li&gt;IOC (Indikatorer som f.eks IP addresser, prosesser) brukes ofte som informasjon knyttet til angrep.&lt;/li&gt;
+&lt;li&gt;Tiltak som kan gjøres&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hva-er-nettsiden-laget-av&#34;&gt;Hva er nettsiden laget av?&lt;/h3&gt;
+&lt;p&gt;Github pages + Hugo, bygging skjer via GitHub actions. Ikke så mye mer spennende en det..&lt;/p&gt;
+&lt;h3 id=&#34;hvordan-kan-jeg-bidra&#34;&gt;Hvordan kan jeg bidra?&lt;/h3&gt;
+&lt;p&gt;Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som &amp;ldquo;Issues&amp;rdquo;
+Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;, jeg biter ikke..&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Artikler</title>
+      <link>https://trusselsky.github.io/artikler/</link>
+      <pubDate>Tue, 27 Jul 2021 18:26:31 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/artikler/</guid>
+      <description></description> 
+    </item>
+    
+    <item>
+      <title>PrintNightmare - CVE-2021-34527</title>
+      <link>https://trusselsky.github.io/posts/printnightmare/</link>
+      <pubDate>Tue, 27 Jul 2021 16:33:39 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/printnightmare/</guid>
+      <description>&lt;h3 id=&#34;hva-er-det&#34;&gt;Hva er det?&lt;/h3&gt;
+&lt;p&gt;Den 30 Juli, ble det avdekket en sårbarhet i Print Spooler tjenesten i Windows. Som er en innebygget tjeneste i Windows som håndterer utskrift samt er også ansvarlig for driver innstallasjon knyttet til oppkobling av skrivere på Windows operativsystem.&lt;/p&gt;
+&lt;p&gt;Det har kommet en del informasjon knyttet til denne sårbarheten samtidig som den er veldig omfattende og dekkes av flere CVE&amp;rsquo;er.&lt;/p&gt;
+&lt;p&gt;1: CVE-2021-1675 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-1675&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-1675&lt;/a&gt;) som ikke er sårbarheten dubbet PrintNightmare. Microsoft kom med egen patch for denne med månedlig oppdateringer i Juli.&lt;br&gt;
+2: CVE-2021-34527 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527&lt;/a&gt;) har også kommet med egne patcher for de ulike operativsystemene.&lt;br&gt;
+3: CVE-2021-34481 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34481&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34481&lt;/a&gt;) ny sårbarhet for lokal eskalering av tilganger. (Egen artikkel, kom 16 Juli)&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-versjoner-gjelder-det&#34;&gt;Hvilken versjoner gjelder det?&lt;/h3&gt;
+&lt;p&gt;Denne sårbarheten gjelder alle Windows Operativsystem (både klient og Server) fra Windows 7/2008 til Windows 10/2019.&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-konsekvenser-har-det&#34;&gt;Hvilken konsekvenser har det?&lt;/h3&gt;
+&lt;p&gt;Denne sårbarheten kan gjøre det mulig å kompromitere maskiner i gitte scenarioer hvor man har Print Spooler tjenesten kjørende. Dette kan da være nettverksbaserte maskiner som domene kontrollere eller andre typer maskiner. Print Spooler tjenesten kjører som standard. Svakheten er definert slik at man kan lage en egendefinert DLL fil (som gjenspeiler en Print Driver) som man kan få print tjenesten i Windows til å importere under SYSTEM kontekst om Remote Printing tjenestne er aktivert. Denne egendefinerte DLL filen kan f.eks inneholde skjulte kommandoer for å tildele f.eks lokal administrator tilgang.  Basert på informasjon vi har tilgjengelig er det ingen aktive angrep som benytter seg av denne angrepsvektoren ennå. Det krever tilgang til f.eks en maskin innenfor domenet for å kunne utnytte seg av sårbarheten som en da autentisert bruker.&lt;/p&gt;
+&lt;h3 id=&#34;løsningerworkarounds&#34;&gt;Løsninger/Workarounds&lt;/h3&gt;
+&lt;p&gt;Microsoft har kommet med sikkerhetsoppdateringer som løser sårbarheten. Men pga flere sårbarheter som nå blir avdekket i Print Spooler tjenesten, samt generell råd er at man deaktiverer Print Spooler tjenesten på maskiner som ikke har behov for den, som f.eks Domene kontrollere.  Merk at sikkerhetsoppdateringene fra Microsoft krever omstart av maskinene som blir oppdatert.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PowerShell eksempel&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Stop-Service -Name Spooler -Force
+Set-Service -Name Spooler -StartupType Disabled
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Merk at ved å deaktivere Print Spooler tjenesten vil stoppe muligheten for å kjøre print jobber, dette omfatter også f.eks konvertering til PDF. For maskiner hvor man har behov for print som f.eks Citrix servere eller lokale arbeidsstasjoner er det anbefalt at man deaktiverer inbound remote print for å kunne&lt;/p&gt;
+&lt;h3 id=&#34;mer-informasjon&#34;&gt;Mer informasjon&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Eksempler på exploit &lt;a href=&#34;https://github.com/nemo-wq/PrintNightmare-CVE-2021-34527&#34;&gt;https://github.com/nemo-wq/PrintNightmare-CVE-2021-34527&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Her er også et eksempel på hvordan man kan koble opp til en ekstern fiktiv print tjeneste som deretter gir System tilganger på maskinen. Merk at skaperen bak Mimikatz skriver også hvordan man kan begrense dette til kun godkjente systemer også via Group Policy.
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Want to test &lt;a href=&#34;https://twitter.com/hashtag/printnightmare?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#printnightmare&lt;/a&gt; (ep 4.x) user-to-system as a service?🥝&lt;br&gt;(POC only, will write a log file to system32)&lt;br&gt;&lt;br&gt;connect to \\&lt;a href=&#34;https://t.co/6Pk2UnOXaG&#34;&gt;https://t.co/6Pk2UnOXaG&lt;/a&gt; with&lt;br&gt;- user: .\gentilguest&lt;br&gt;- password: password&lt;br&gt;&lt;br&gt;Open &amp;#39;Kiwi Legit Printer - x64&amp;#39;, then &amp;#39;Kiwi Legit Printer - x64 (another one)&amp;#39; &lt;a href=&#34;https://t.co/zHX3aq9PpM&#34;&gt;pic.twitter.com/zHX3aq9PpM&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🥝 Benjamin Delpy (@gentilkiwi) &lt;a href=&#34;https://twitter.com/gentilkiwi/status/1416429860566847490?ref_src=twsrc%5Etfw&#34;&gt;July 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Om</title>
+      <link>https://trusselsky.github.io/om/</link>
+      <pubDate>Mon, 26 Jul 2021 10:02:13 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/om/</guid>
+      <description>&lt;p&gt;Tjenesten er drevet av Marius Sandbu - &lt;a href=&#34;https://www.linkedin.com/in/marius-sandbu-a2b0141b/&#34;&gt;Linkedin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tjenesten er et hobbyprosjekt med hensikt om å fremme informasjonsdeling knyttet til IT-sikkerhet og digital trusler. Etter å ha jobbet en del med virksomheter som hadde blitt rammet av IT-angrep med kjente angrepsvektorer samt aktivt jobbet med informasjonsdeling ser jeg et behov for å gjøre slik informasjon litt mer tilgjengelig samt i litt lettere format.&lt;/p&gt;
+&lt;p&gt;Om det er noen andre spørsmål knyttet til tjenesten, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Serious Sam - CVE-2021-36934</title>
+      <link>https://trusselsky.github.io/posts/serioussam/</link>
+      <pubDate>Mon, 26 Jul 2021 09:57:04 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/serioussam/</guid>
+      <description>&lt;h3 id=&#34;hva-er-det&#34;&gt;Hva er det?&lt;/h3&gt;
+&lt;p&gt;Den 19 Juli, ble det avdekket en sårbarhet i SAM (Security Account Manager) databasen i Windows 10 på nyere versjoner. Denne sårbarheten gjorde at brukerdatabasen kunne bli lest av ikke-administrator kontoer i Windows 10 under en gitt kontekst. Dette var kun mulig å gjøre om det fantes VSS (Volume Shadow Service) som oftest brukes for å lage lokale snapshots i Windows (som f.eks Previous Versions). Om man har f.eks backup tjenester som brukes mot Windows 10 klient maskiner vil den ofte bruke VSS for å lage snapshots. Samt f.eks System Restore funksjonen i Windows bruker VSS for å lage snapshosts.&lt;/p&gt;
+&lt;p&gt;Sårbarheten ble avdekket av Jonas Lyk (&lt;a href=&#34;https://twitter.com/jonasLyk/status/1417205166172950531&#34;&gt;https://twitter.com/jonasLyk/status/1417205166172950531&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-versjoner-gjelder-det&#34;&gt;Hvilken versjoner gjelder det?&lt;/h3&gt;
+&lt;p&gt;Dette gjelder Windows 10 (fra 1809 oppover) samt Windows Server 2019. Sårbarheten er kun mulig å utnytte om man har tilgang til å kjøre kode på det aktuelle systemet.&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-konsekvenser-har-det&#34;&gt;Hvilken konsekvenser har det?&lt;/h3&gt;
+&lt;p&gt;Om en klient maskin blir kompromitert samt har shadow copies lokalt på maskinen, kan en angriper bruke dette for å elevere seg selv til å bli lokal administrator. Eller hente ut informasjon om andre brukerkontoer som ligger igjen lokalt, som f.eks domene kontoer.&lt;/p&gt;
+&lt;h3 id=&#34;løsningerworkarounds&#34;&gt;Løsninger/Workarounds&lt;/h3&gt;
+&lt;p&gt;Microsoft har ikke kommet med patch ennå, men det finnes en workaround for å kunne løse opp i sårbarheten. Samtidig er det viktig å påpeke at sårbarheten ikke blir aktivt utnyttet ennå, men at Microsoft vil komme med en oppdatering fortløpende.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Begrens tilgang til SAM databasen, kjør CMD/PowerShell som Administrator icacls %windir%\system32\config*.* /inheritance:e&lt;/li&gt;
+&lt;li&gt;Slett tidligere Shadow Copies som ble laget før punkt 1 ble gjort. Her er mer informasjon knyttet til hvordan finne og slette Shadow Copies &amp;ndash;&amp;gt; &lt;a href=&#34;https://support.microsoft.com/en-gb/topic/kb5005357-delete-volume-shadow-copies-1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7&#34;&gt;https://support.microsoft.com/en-gb/topic/kb5005357-delete-volume-shadow-copies-1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mer-informasjon&#34;&gt;Mer informasjon&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft CVE-2021-36934 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36934&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36934&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Python PoC (&lt;a href=&#34;https://github.com/GossiTheDog/HiveNightmare&#34;&gt;https://github.com/GossiTheDog/HiveNightmare&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;video-av-exploit&#34;&gt;Video av Exploit&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5zdIq6t3DOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description> 
+    </item>
+    
+    <item>
+      <title>Påmelding</title>
+      <link>https://trusselsky.github.io/signup/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://trusselsky.github.io/signup/</guid>
+      <description>&lt;p&gt;Om du ønsker informasjon via vårt nyhetsbrev, legg inn epost adressen din her. Vi prøver å holde oss til en epost utsendelse med oppsummeringer hver 14 dag, med mindre det er noe kritisk vil vi prøve å formidle så fort som mulig.&lt;/p&gt;
+&lt;p&gt;Nyhetsbrev tjenesten benytter Mailchimp for e-post utsending.
+
+
+&lt;!-- Begin Mailchimp Signup Form --&gt;
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://github.us6.list-manage.com/subscribe/post?u=3f356876af0fd9e7279ba3df8&amp;amp;id=1cdf42762f&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+	&lt;h2&gt;Meld på Nyhetsbrev&lt;/h2&gt;
+&lt;div class=&#34;indicates-required&#34;&gt;&lt;span class=&#34;asterisk&#34;&gt;*&lt;/span&gt; indicates required&lt;/div&gt;
+&lt;div class=&#34;mc-field-group&#34;&gt;
+	&lt;label for=&#34;mce-EMAIL&#34;&gt;Epost Adresse  &lt;span class=&#34;asterisk&#34;&gt;*&lt;/span&gt;
+&lt;/label&gt;
+	&lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+	&lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+		&lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+	&lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_3f356876af0fd9e7279ba3df8_1cdf42762f&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;!--End mc_embed_signup--&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Om du ikke ønsker å lengre få epost, velg unsubscribe som ligger nederst på eposten som du har fått. Eller så kan du også melde deg av nyhetsbrevet her
+&lt;a href=&#34;https://github.us6.list-manage.com/unsubscribe?u=3f356876af0fd9e7279ba3df8&amp;amp;id=1cdf42762f&amp;amp;e&#34;&gt;Mailchimp&lt;/a&gt;.&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Søk</title>
+      <link>https://trusselsky.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trusselsky.github.io/search/</guid>
+      <description></description> 
+    </item>
+    
+  </channel>
+</rss>

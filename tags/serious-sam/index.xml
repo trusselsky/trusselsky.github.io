@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serious Sam on Trusselsky</title>
+    <link>https://trusselsky.github.io/tags/serious-sam/</link>
+    <description>Recent content in Serious Sam on Trusselsky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Jul 2021 09:57:04 +0200</lastBuildDate>
+    
+	<atom:link href="https://trusselsky.github.io/tags/serious-sam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Serious Sam - CVE-2021-36934</title>
+      <link>https://trusselsky.github.io/posts/serioussam/</link>
+      <pubDate>Mon, 26 Jul 2021 09:57:04 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/serioussam/</guid>
+      <description>&lt;h3 id=&#34;hva-er-det&#34;&gt;Hva er det?&lt;/h3&gt;
+&lt;p&gt;Den 19 Juli, ble det avdekket en sårbarhet i SAM (Security Account Manager) databasen i Windows 10 på nyere versjoner. Denne sårbarheten gjorde at brukerdatabasen kunne bli lest av ikke-administrator kontoer i Windows 10 under en gitt kontekst. Dette var kun mulig å gjøre om det fantes VSS (Volume Shadow Service) som oftest brukes for å lage lokale snapshots i Windows (som f.eks Previous Versions). Om man har f.eks backup tjenester som brukes mot Windows 10 klient maskiner vil den ofte bruke VSS for å lage snapshots. Samt f.eks System Restore funksjonen i Windows bruker VSS for å lage snapshosts.&lt;/p&gt;
+&lt;p&gt;Sårbarheten ble avdekket av Jonas Lyk (&lt;a href=&#34;https://twitter.com/jonasLyk/status/1417205166172950531&#34;&gt;https://twitter.com/jonasLyk/status/1417205166172950531&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-versjoner-gjelder-det&#34;&gt;Hvilken versjoner gjelder det?&lt;/h3&gt;
+&lt;p&gt;Dette gjelder Windows 10 (fra 1809 oppover) samt Windows Server 2019. Sårbarheten er kun mulig å utnytte om man har tilgang til å kjøre kode på det aktuelle systemet.&lt;/p&gt;
+&lt;h3 id=&#34;hvilken-konsekvenser-har-det&#34;&gt;Hvilken konsekvenser har det?&lt;/h3&gt;
+&lt;p&gt;Om en klient maskin blir kompromitert samt har shadow copies lokalt på maskinen, kan en angriper bruke dette for å elevere seg selv til å bli lokal administrator. Eller hente ut informasjon om andre brukerkontoer som ligger igjen lokalt, som f.eks domene kontoer.&lt;/p&gt;
+&lt;h3 id=&#34;løsningerworkarounds&#34;&gt;Løsninger/Workarounds&lt;/h3&gt;
+&lt;p&gt;Microsoft har ikke kommet med patch ennå, men det finnes en workaround for å kunne løse opp i sårbarheten. Samtidig er det viktig å påpeke at sårbarheten ikke blir aktivt utnyttet ennå, men at Microsoft vil komme med en oppdatering fortløpende.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Begrens tilgang til SAM databasen, kjør CMD/PowerShell som Administrator icacls %windir%\system32\config*.* /inheritance:e&lt;/li&gt;
+&lt;li&gt;Slett tidligere Shadow Copies som ble laget før punkt 1 ble gjort. Her er mer informasjon knyttet til hvordan finne og slette Shadow Copies &amp;ndash;&amp;gt; &lt;a href=&#34;https://support.microsoft.com/en-gb/topic/kb5005357-delete-volume-shadow-copies-1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7&#34;&gt;https://support.microsoft.com/en-gb/topic/kb5005357-delete-volume-shadow-copies-1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mer-informasjon&#34;&gt;Mer informasjon&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft CVE-2021-36934 (&lt;a href=&#34;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36934&#34;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36934&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Python PoC (&lt;a href=&#34;https://github.com/GossiTheDog/HiveNightmare&#34;&gt;https://github.com/GossiTheDog/HiveNightmare&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;video-av-exploit&#34;&gt;Video av Exploit&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5zdIq6t3DOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description> 
+    </item>
+    
+  </channel>
+</rss>
