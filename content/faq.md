@@ -88,7 +88,7 @@ Vi bruker ulike felt avhengig av informasjon som skal ut, de fleste artikler vi 
 * Tiltak som kan gjøres
 
 ### Hva er nettsiden laget av? ###
-Github pages + Hugo, bygging skjer via GitHub actions. Ikke så mye mer spennende en det..
+Github pages + Hugo, bygging skjer via GitHub actions + Cloudflare som leverer frontend. Ikke så mye mer spennende en det..
 
 ### Hvordan kan jeg bidra? ###
 Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som "Issues" 
