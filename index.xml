@@ -5,7 +5,7 @@
     <link>https://trusselsky.github.io/</link>
     <description>Recent content on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Jul 2021 15:09:25 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jul 2021 10:15:54 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -79,6 +79,44 @@ F.eks at de ikke får informasjon om at det er en sårbarhet knyttet til et spes
 &lt;h3 id=&#34;hvordan-kan-jeg-bidra&#34;&gt;Hvordan kan jeg bidra?&lt;/h3&gt;
 &lt;p&gt;Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som &amp;ldquo;Issues&amp;rdquo;
 Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;, jeg biter ikke..&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Windows 11 og Measured Boot m/TPM</title>
+      <link>https://trusselsky.github.io/posts/windows11ogsecureboot/</link>
+      <pubDate>Thu, 29 Jul 2021 10:15:54 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/windows11ogsecureboot/</guid>
+      <description>&lt;p&gt;Som en del av Windows 11, har Microsoft introdusert en del rekke endringer i forhold til sikkerhet og hardware krav som følger de sikkerhetsfunksjonene.
+En av de største endringene er at Microsft nå vil kreve at maskiner som skal kjøre Windows 11 på fysiske maskiner, støtter en funksjon i Windows som heter Measured Boot.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://i0.wp.com/docs.microsoft.com/en-us/windows/security/information-protection/images/dn168167.boot_process%28en-us,msdn.10%29.png?zoom=1.25&amp;amp;w=750&amp;amp;ssl=1&#34; alt=&#34;Secure Boot&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;measured-boot&#34;&gt;Measured Boot&lt;/h2&gt;
+&lt;p&gt;Measured Boot er delt opp i 2 deler, ene som er Secure Boot prosessen som ble laget for at operativsystemet kun starter opp med programvare som leverandøren kan stole på. Når maskinen starter Secure boot vil den første finne OS Bootloader partisjonen, verifisere at firmwaren er digital signert samt at den ikke er modifisert. Om innholdet er inntakt vil den deretter starte operativsystemet.    Andre delen som kalles Trusted Boot sjekker integriteten av alle Windows baserte komponenter (samt ELAM &amp;ldquo;Early Launch Anti-Malware&amp;rdquo; sjekker at alle drivere er digital signerte før de blir lastet inn i bruker kontekst).&lt;/p&gt;
+&lt;p&gt;NB: Secure Boot er en funksjon som ligger i UEFI å ikke noe Microsoft har utviklet.&lt;/p&gt;
+&lt;p&gt;For å kunne bruke Measured Boot (m/Secure boot) i Windows krever to ting, det ene er UEFI firmware samt TPM på maskinen.&lt;/p&gt;
+&lt;h2 id=&#34;hva-slags-angrep-stopper-denne-tjenesten&#34;&gt;Hva slags angrep stopper denne tjenesten?&lt;/h2&gt;
+&lt;p&gt;Selve sikkerhetsmekanismen er beregnet på å stoppe Bootkits og RootKits. Bootkits er skadelig kode som starter før selve operativsystemet laster inn som gjør at om man skulle bli infisert av en Bootkit, kan koden ligge i maskinen og overleve reinnstallasjon av operativsystem blant annet. Trickbot er en malware aktør som benytter seg av Bootkit som de har kalt TrickBoot (Man kan lese mer om det her &amp;ndash;&amp;gt; &lt;a href=&#34;https://eclypsium.com/2020/12/03/trickbot-now-offers-trickboot-persist-brick-profit/&#34;&gt;https://eclypsium.com/2020/12/03/trickbot-now-offers-trickboot-persist-brick-profit/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Samt med ELAM og verifisering av Windows komponenter kan man også unngå Rootkits ved at anti-virus tjenesten kan starte før en eventuelt Rootkit som ofte starter som en prosess eller scheduled task kan starte.&lt;/p&gt;
+&lt;p&gt;Selvsagt viktig å påpeke at disse sikkerhetsfunksjonene vil ikke ha noe direkte effekt mot f.eks ransomware angrep, hvor angripere ofte angriper kjørende maskiner ved å utnytte andre sårbarheter. Men dette er rettet mot f.eks mot fysisk angrep hvor noen prøver å modifisere boot prosessen.&lt;/p&gt;
+&lt;h2 id=&#34;hvorfor-er-disse-tpm-kravene-her&#34;&gt;Hvorfor er disse TPM kravene her?&lt;/h2&gt;
+&lt;p&gt;Så trenger jeg virkelig TPM? å i tilfelle hvilken versjon trenger jeg? Microsoft har endret litt på kravene sine, så for å få lov til å innstallere Windows 11 må man ha støtte for ihvertfall TPM 1.2 eller høyere.&lt;/p&gt;
+&lt;p&gt;TPM 1.2 standaren ble ferdig i 2011 så mange av dagens maskiner har&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://pbs.twimg.com/media/E4rU5YiWYAMDqlA?format=png&amp;amp;name=900x900&#34; alt=&#34;Windows 11 krav&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Man kan også slå av denne sjekken under installasjon ved å legge til en enkel registry nøkkel på maskinen.
+Ved innstallasjon trykk Shift+F10, åpne registry og legg til nøkkel&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\Setup “BypassTPMCheck”=dword:00000001   
+“BypassSecureBootCheck”=dword:00000001
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Microsoft anbefaler at man helst har TPM 2.0 chip på maskinene pga det er en stor løft fra TPM 1.2 til TPM 2.0 &amp;ndash;&amp;gt; (&lt;a href=&#34;https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/tpm-recommendations#tpm-12-vs-20-comparison&#34;&gt;https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/tpm-recommendations#tpm-12-vs-20-comparison&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;andre-funksjoner-som-vil-kreve-dette&#34;&gt;Andre funksjoner som vil kreve dette&lt;/h2&gt;
+&lt;p&gt;Microsoft ønsker også å kunne benytte denne funskjonen som en autentiseringsfaktor også. Mange av tilgangsmekanismene som i dag finnes i Azure AD er basert på enten bruker m/tofator autentisering. Men i bunnen av Windows 11 har Microsoft også utviklet en ny funksjon for utveksling av helse status på maskinen.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://pbs.twimg.com/media/E49JZwLWUAAJWlT?format=jpg&amp;amp;name=large&#34; alt=&#34;Microsoft Azure Attestation&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Som betyr f.eks at Windows 11 maskiner kan sende helse signal til Azure AD ved å gi beskjed om status i forhold til Secure Boot før f.eks en enhet får tilgang til data og tjenester, men dette er noe som kommer på sikt.&lt;/p&gt;
+&lt;h2 id=&#34;mer-informasjon&#34;&gt;Mer informasjon&lt;/h2&gt;
+&lt;p&gt;NSA har også laget en god oppsummering på UEFI og Secure Boot prosessen &amp;ndash;&amp;gt; &lt;a href=&#34;https://media.defense.gov/2020/Sep/15/2002497594/-1/-1/0/CTR-UEFI-SECURE-BOOT-CUSTOMIZATION-20200915.PDF/CTR-UEFI-SECURE-BOOT-CUSTOMIZATION-20200915.PDF&#34;&gt;https://media.defense.gov/2020/Sep/15/2002497594/-1/-1/0/CTR-UEFI-SECURE-BOOT-CUSTOMIZATION-20200915.PDF/CTR-UEFI-SECURE-BOOT-CUSTOMIZATION-20200915.PDF&lt;/a&gt;&lt;/p&gt;
 </description> 
     </item>
     
