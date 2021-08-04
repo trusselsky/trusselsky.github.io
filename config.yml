@@ -61,7 +61,7 @@ params:
     # profile-mode
     profileMode:
         enabled: true # needs to be explicitly set
-        title: Informasjonsdeling av rundt IT sikkerhet
+        title: Informasjonsdeling rundt IT sikkerhet
         subtitle: "En lettvekt varslingstjeneste for digitale sikkerhetstrusler"
         imageUrl: "https://i.imgur.com/fVRpZdZ.png"
         imageWidth: 200
