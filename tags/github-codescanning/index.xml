@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub CodeScanning on Trusselsky</title>
+    <link>https://trusselsky.github.io/tags/github-codescanning/</link>
+    <description>Recent content in GitHub CodeScanning on Trusselsky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 29 Jul 2021 13:20:04 +0200</lastBuildDate>
+    
+	<atom:link href="https://trusselsky.github.io/tags/github-codescanning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sårbarhetsscanning med GitHub mot kjente rammeverk</title>
+      <link>https://trusselsky.github.io/posts/kodescanninggithub/</link>
+      <pubDate>Thu, 29 Jul 2021 13:20:04 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/kodescanninggithub/</guid>
+      <description>&lt;p&gt;Den (28/07) Annonserte GitHub at som en del av Code Scanning tjenesten de leverer at de nå har kommet med 15 nye integrasjoner med åpne kildekode rammeverk som dekker rammeverk som Ruby, PHP, Switch, Terraform, PowerShell og Kubernetes YAML.&lt;/p&gt;
+&lt;p&gt;Code Scanning funksjonen ble lansert i 2020 som er tilgjengelig for alle offentelige repositories samt for Private repositories (Krever GitHub Advanced) men gjør at man kan se igjennom kildekoden etter sårbarheter.&lt;/p&gt;
+&lt;h2 id=&#34;hvordan-sette-opp-code-scanning&#34;&gt;Hvordan sette opp Code Scanning&lt;/h2&gt;
+&lt;p&gt;Code Scanning kan aktiveres ved å gå inn på et &lt;strong&gt;Repository &amp;ndash;&amp;gt; Security &amp;ndash;&amp;gt; Overview &amp;ndash;&amp;gt; Code Scanning&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/githubcodescanning.JPG&#34; alt=&#34;Code Scannning&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Deretter må man velge basert på hvilken rammeverk man benytter. Man kan benytte seg av de innebydge arbeidsflyten som er egen basert på definert rammeverk eller man kan bruke CodeQL Analysis&lt;/p&gt;
+&lt;h2 id=&#34;github-actions-med-codescanning-med-terraform&#34;&gt;GitHub Actions med CodeScanning med Terraform&lt;/h2&gt;
+&lt;p&gt;Med et eksempel her, skal vi vise hvordan man kan bruke Code Scanning sammen med tfsec for å scanne et Github repository som inneholder Terraform kode for å se etter ikke-sikker konfigurasjon.
+Code Scanning benytter GitHub Actions, hvor tjenesten vil via en Ubuntu-Worker laste ned innholdet i GitHub repositoriet.  Som et eksempel her har vi laget følgende.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fork innholdet i repositoriet her &amp;ndash;&amp;gt; &lt;a href=&#34;https://github.com/snyk/terraform-goof&#34;&gt;https://github.com/snyk/terraform-goof&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gå inn på &lt;strong&gt;Security &amp;ndash;&amp;gt; Overview &amp;ndash;&amp;gt; Code Scanning &amp;ndash;&amp;gt; Velg tfsec fra listen&lt;/strong&gt; klikk Setup this workflow.
+&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/tfsec.JPG&#34; alt=&#34;TFSEC&#34;  /&gt;
+  Dette vil da lage en Github Actions Workflow i ditt repository som vil kjøres hver gang ny kode sjekkes inn. Konfigurasjon vil du kunne se under ./guthub/workflows mappen.  Du kan se et eksempel på det her &amp;ndash;&amp;gt; (&lt;a href=&#34;https://github.com/trusselsky/terraform-goof&#34;&gt;https://github.com/trusselsky/terraform-goof&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Om du vil sette opp workflow direkte fra lokale IDE og pushe konfigurasjon via Git kan du bruke følgende template.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;name: tfsec
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]  
+  schedule:
+    - cron: &#39;15 13 * * 5&#39;
+
+jobs:
+  tfsec:
+    name: Run tfsec sarif report
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+
+      - name: Run tfsec
+        uses: tfsec/tfsec-sarif-action@9a83b5c3524f825c020e356335855741fd02745f
+        with:
+          sarif_file: tfsec.sarif         
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          # Path to SARIF file relative to the root of the repository
+          sarif_file: tfsec.sarif  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;NB:&lt;/strong&gt; Tfsec har en del innebygget sjekker mot ulike providere i Terraform, mer informasjon kan finnes her (&lt;a href=&#34;https://tfsec.dev/docs/installation/&#34;&gt;https://tfsec.dev/docs/installation/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Når flyten er implementert vil den gå igjennom kildekoden å laste opp eventuelle resultat inn i en SARIF fil. Github vil lese innholdet i den genererte SARIF filen for å vise alarmer som kommer frem. Du kan se resultatet under Security &amp;ndash;&amp;gt; Code Scanning Alerts&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/codescanningalerts.JPG&#34; alt=&#34;CodeScanning&#34;  /&gt;
+&lt;/p&gt;
+</description> 
+    </item>
+    
+  </channel>
+</rss>

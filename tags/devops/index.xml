@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on Trusselsky</title>
+    <link>https://trusselsky.github.io/tags/devops/</link>
+    <description>Recent content in DevOps on Trusselsky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Aug 2021 09:18:38 +0200</lastBuildDate>
+    
+	<atom:link href="https://trusselsky.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sikring av Kubernetes og tjenester</title>
+      <link>https://trusselsky.github.io/posts/sikringavkubernetes/</link>
+      <pubDate>Wed, 04 Aug 2021 09:18:38 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/sikringavkubernetes/</guid>
+      <description>&lt;p&gt;Flere og flere organisasjoner begynner å ta i bruk Kubernetes som platform for å levere fremtidige microtjenester. Kubernetes er også et veldig komplekst økosystem som kan bestå av mange ulike elementer i forhold til nettverkskontroll, konfigurasjonskontroll og CI/CD blant annet.&lt;/p&gt;
+&lt;p&gt;Når man skal designe en Kubernetes platform, bør man ha en god forståelse på hvordan man skal sikre løsningen.  Her vil det ligge lenker og oppdatert informasjon på referanse arkitektur og best-pratices i forhold til sikring av Kubernetes og tjenester.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dodcio.defense.gov/Portals/0/Documents/Library/DevSecOpsReferenceDesign.pdf&#34;&gt;DoD DevSecOps: Reference Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.defense.gov/2021/Aug/03/2002820425/-1/-1/1/CTR_KUBERNETES%20HARDENING%20GUIDANCE.PDF?fbclid=IwAR3wywz7qyCtktUgwXAH95zXcFR3lurRXGzkCoQJNQASc4m_JVZk6WmaqmA&#34;&gt;Kubernetes Hardening Guidance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description> 
+    </item>
+    
+  </channel>
+</rss>
