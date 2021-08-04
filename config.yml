@@ -86,8 +86,8 @@ params:
         Content: Trusselsky
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/trusselsky"
+        - name: linkedin
+          url: "https://www.linkedin.com/company/trusselsky"
         - name: github
           url: "https://github.com/trusselsky"
         - name: rss
@@ -120,8 +120,8 @@ menu:
           url: /om
           weight: 30
         - identifier: blog
-          name: twitter
-          url: https://twitter.com/trusselsky
+          name: linkedin
+          url: https://www.linkedin.com/company/trusselsky
           weight: 20
         - identifier: påmelding
           name: nyhetsbrev
