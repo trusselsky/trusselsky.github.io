@@ -564,6 +564,15 @@ Set-Service -Name Spooler -StartupType Disabled
       <description>&lt;p&gt;Tjenesten er drevet av Marius Sandbu - &lt;a href=&#34;https://www.linkedin.com/in/marius-sandbu-a2b0141b/&#34;&gt;Linkedin&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Tjenesten er et hobbyprosjekt med hensikt om å fremme informasjonsdeling knyttet til IT-sikkerhet og digital trusler. Etter å ha jobbet en del med virksomheter som hadde blitt rammet av IT-angrep med kjente angrepsvektorer samt aktivt jobbet med informasjonsdeling ser jeg et behov for å gjøre slik informasjon litt mer tilgjengelig samt i litt lettere format.&lt;/p&gt;
 &lt;p&gt;Om det er noen andre spørsmål knyttet til tjenesten, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;script data-cfbadgetype=&#34;a&#34; data-cfbadgeskin=&#34;blue&#34; type=&#34;text/javascript&#34;&gt;
+//&lt;![CDATA[
+try{window.CloudFlare||function(){var a=window.document,b=a.createElement(&#34;script&#34;),a=a.getElementsByTagName(&#34;script&#34;)[0];window.CloudFlare=[];b.type=&#34;text/javascript&#34;;b.async=!0;b.src=&#34;//ajax.cloudflare.com/cdn-cgi/nexp/cloudflare.js&#34;;a.parentNode.insertBefore(b,a)}(),CloudFlare.push(function(a){a([&#34;cloudflare/badge&#34;])})}catch(e$$5){try{console.error(&#34;CloudFlare badge code could not be loaded. &#34;+e$$5.message)}catch(e$$6){}};
+//]]&gt;
+&lt;/script&gt;
+
+&lt;p&gt;Om skyen lyser så funker Cloudflare å du ser denne siden :)&lt;/p&gt;
 </description> 
     </item>
     
