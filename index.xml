@@ -106,6 +106,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
       &lt;th&gt;IP Addresse&lt;/th&gt;
       &lt;th&gt;Event ID&lt;/th&gt;
       &lt;th&gt;Antall påloggings forsøk&lt;/th&gt;
+      &lt;th&gt;Land&lt;/th&gt;
       &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
@@ -118,31 +119,8 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
              &lt;tr&gt;
         &lt;td&gt;51.13.78.215&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
         &lt;td&gt;11007&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.43.62&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;74&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;185.202.1.213&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;74&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;185.202.2.17&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;100&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -150,23 +128,8 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
              &lt;tr&gt;
         &lt;td&gt;51.38.214.191&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
         &lt;td&gt;11003&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;185.202.2.130&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;1720&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.47.130&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -174,15 +137,44 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
              &lt;tr&gt;
         &lt;td&gt;91.220.163.20&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;26&lt;/td&gt;
+        &lt;td&gt;Ukraine&lt;/td&gt;
+        &lt;td&gt;101&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;185.202.2.68&lt;/td&gt;
+        &lt;td&gt;94.232.43.63&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;100&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;94.232.43.62&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;74&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;91.220.163.63&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Ukraine&lt;/td&gt;
+        &lt;td&gt;60&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;175.137.59.76&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Malaysia&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -190,6 +182,16 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
              &lt;tr&gt;
         &lt;td&gt;94.232.46.80&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;94.232.47.130&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
       &lt;/tr&gt;
       
@@ -198,6 +200,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
              &lt;tr&gt;
         &lt;td&gt;94.232.41.158&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
       &lt;/tr&gt;
       
@@ -206,15 +209,35 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
              &lt;tr&gt;
         &lt;td&gt;183.196.65.209&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;China&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;94.232.43.63&lt;/td&gt;
+        &lt;td&gt;54.37.74.253&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;100&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;211.45.198.120&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Republic of Korea&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;78.128.91.5&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Bulgaria&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -613,7 +636,7 @@ try{window.CloudFlare||function(){var a=window.document,b=a.createElement(&#34;s
 //]]&gt;
 &lt;/script&gt;
 
-&lt;p&gt;Om skyen lyser så funker Cloudflare å du ser denne siden :)&lt;/p&gt;
+&lt;p&gt;Om skyen lyser så funker Cloudflare å du ser denne siden :) hadde vært litt rart ellers&amp;hellip;.&lt;/p&gt;
 </description> 
     </item>
     
@@ -656,7 +679,8 @@ try{window.CloudFlare||function(){var a=window.document,b=a.createElement(&#34;s
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
       <guid>https://trusselsky.github.io/signup/</guid>
-      <description>&lt;p&gt;Om du ønsker informasjon via vårt nyhetsbrev, legg inn epost adressen din her. Vi prøver å holde oss til en epost utsendelse med oppsummeringer hver 14 dag, med mindre det er noe kritisk vil vi prøve å formidle så fort som mulig.&lt;/p&gt;
+      <description>&lt;p&gt;Om du ønsker informasjon via vårt nyhetsbrev, legg inn epost adressen din her. Vi prøver å holde oss til en epost utsendelse med oppsummeringer hver uke, med mindre det er noe kritisk vil vi prøve å formidle så fort som mulig.&lt;/p&gt;
+&lt;p&gt;Om man ikke ønsker å bruke epost, så kan du også gjerne benytte RSS eller bare bookmarke siden.&lt;/p&gt;
 &lt;p&gt;Nyhetsbrev tjenesten benytter Mailchimp for e-post utsending.
 
 
