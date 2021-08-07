@@ -62,7 +62,7 @@ params:
     profileMode:
         enabled: true # needs to be explicitly set
         title: Informasjonsdeling rundt IT sikkerhet
-        subtitle: "En lettvekt varslingstjeneste for digitale sikkerhetstrusler"
+        subtitle: "En lettvekt varslingstjeneste for digitale sikkerhetstrusler samt informasjonsdeling rundt IT-sikkerhet"
         imageUrl: "https://i.imgur.com/fVRpZdZ.png"
         imageWidth: 200
         imageHeight: 200
@@ -78,6 +78,8 @@ params:
               url: search
             - name: Artikler
               url: artikler
+            - name: Stats
+              url: stats
 
 
     # home-info mode
