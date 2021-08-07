@@ -5,10 +5,61 @@
     <link>https://trusselsky.github.io/posts/</link>
     <description>Recent content in Posts on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Aug 2021 09:18:38 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 05 Aug 2021 21:56:46 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTTP/3 og fremtidens websikkerhet</title>
+      <link>https://trusselsky.github.io/posts/http3ogfremtiden/</link>
+      <pubDate>Thu, 05 Aug 2021 21:56:46 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/http3ogfremtiden/</guid>
+      <description>&lt;p&gt;Arbeidsgruppen i IETF begynner å komme i mål med HTTP/3 standarden som vil påvirke både ytelsen og sikkerheten på all nett-trafikk, så hva er de viktigste endringene å hvordan påvirker det også sikkerheten?&lt;/p&gt;
+&lt;h2 id=&#34;historien-så-langt&#34;&gt;Historien så langt&lt;/h2&gt;
+&lt;p&gt;Det skjer for tiden veldig mye utvikling på teknologifronten når det gjelder web og hvordan vi kommuniserer med netttjenester.
+Når man åpner en nettleser mot f.eks vg.no vil enhenten du sitter på benytte en rekke nettverksprotokoller for å kommunisere med VG sin infrastruktur.&lt;/p&gt;
+&lt;p&gt;Protokollen som benyttes i bunn på nettleser trafikk er HTTP. HTTP har eksistert lenge og majoriteten av nettlesern trafikken i dag benytter HTTP 1.1 protokollen (som har eksistert siden 90-tallet).
+Problemet med den protokollen var (og er) all trafikk blir sendt i klartekst, derfor måtte man lage en ny versjon av denne protokollen som her HTTPS som krypterer innholdet mellom tjenester og enhet. Her benyttet man til og begynne med SSL og deretter TLS protokollen som krypteringsprotokoll for å kryptere innholdet mellom klient og tjener.&lt;/p&gt;
+&lt;p&gt;HTTP benytter TCP som kommunikasjonsprotokoll for overføring av data, som også gjør den sårbar for pakketap eller høy latency. Kombinert med TLS kommunikasjonen fører til høyere tid mellom klient og tjenester for å få etablert kommunikasjon.&lt;/p&gt;
+&lt;p&gt;HTTP 1.1 som protokoll har også en del svakheter blant annet at den ikke støtter multiplexing på en god måte som gjør at HTTP trafikk som kommer fra ulike tjenere må vente i tur. Samtidig med f.eks HTTP/2 kom de også med multiplexing som gjør at man ikke får dette problemet. Samtidig introduserte de også blant annet HPACK (Header Compression) som gjør at man reduserer båndbredden.&lt;/p&gt;
+&lt;p&gt;Når HTTP/2 standarden kom valgte også flere leverandører og kreve at all kommunikasjon som skulle støtte HTTP/2 måtte bruke TLS som standard. Som gjorde blant annet f.eks ulike nettlesere som Firefox, Chrome og Edge krever HTTPS når man skal bruke HTTP/2 som protokol.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NB:&lt;/strong&gt; Med TLS 1.3 prøver man å redusere tiden det tar å etablere kommunikasjon mellom klient og tjener ved å benytte. Her ser man en sammenligning mellom TLS 1.2 over HTTP mot TLS 1.3&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/tls12vs13.jpg&#34; alt=&#34;TLS13&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Samtidig som utviklingen har pågått med å prøve å sikre kommunikasjonen (som også i utgangspunktet har ført til tregere kommunikasjon og flere forsinkende ledd) har web utviklingen rast videre, hvor vi nå har mye mer multimedia innhold (bilder,videoer) mye mer 3.parts biblotek og eksterne tjenester. Før var nettleser trafikken mer statisk innhold, hvor det nå har blitt til mye dynamisk innhold og store rammeverk (CMS) med mer multimedia og streaming mekanismer som gjør at man må ha en transport mekanisme som kan overføre data mer effektivt.&lt;/p&gt;
+&lt;h2 id=&#34;sikkerhet-og-inspeksjon&#34;&gt;Sikkerhet og inspeksjon&lt;/h2&gt;
+&lt;p&gt;Med introduksjon av SSL/TLS krypteringsprotokollene betydde dette at kommunikasjon ble kryptert. (dog dette betyr ikke at innholdet nødvendigvis er trygt)&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;HTTPS &amp;amp; SSL doesn&amp;#39;t mean &amp;quot;trust this.&amp;quot; It means &amp;quot;this is private.&amp;quot; You may be having a private conversation with Satan.&lt;/p&gt;&amp;mdash; Scott Hanselman (@shanselman) &lt;a href=&#34;https://twitter.com/shanselman/status/187572289724887041?ref_src=twsrc%5Etfw&#34;&gt;April 4, 2012&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Med mer ondsinnet trafikk som gikk over nett betydde dette at flere måtte begynne å bruke tjenester for å kunne analysere innholdet (som i dag tilbys av de fleste brannmur/proxy leverandører). Dette  kunne da analysere innholdet etter f.eks ondsinnet trafikk eller beskytte brukere fra ukjente adresser eller annet innhold. Flere leverandører bruker også lignende mekanismer for å kunne kategorisere innhold samt definere hvilken applikasjon/tjeneste som en bruker kobler seg opp i mot. Dette betyr i prinsippet at proxy/brannmur tjenesten dekrypterer innholdet for å kunne &amp;ldquo;se&amp;rdquo; hva som skjer i trafikk strømmen før trafikken blir kryptert igjen og sendt videre, som en type MiTM (Man-in-the-middle) tjeneste.&lt;/p&gt;
+&lt;p&gt;Denne mekanismen ble også brukt for lastbalanseringstjenester der man kunne balansere trafikk basert på spesifikt innhold.&lt;/p&gt;
+&lt;h2 id=&#34;hvorfor-http3-&#34;&gt;Hvorfor HTTP/3 ?&lt;/h2&gt;
+&lt;p&gt;Allerede nå er det mange nettsider/leverandører som har beveget seg videre til HTTP/3, som man ser her så er cirka &lt;strong&gt;13% av all kommunikasjon går via HTTP/3 protokollen&lt;/strong&gt; Som store leverandører som Google, AWS og Cloudflare, mens resten er fordelt på HTTP 1.1 og HTTP/2 (Statistikk fra Cloudflare Radar siste 30 dagene) som også er supportert av de fleste moderne nettlesere.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/http3.jpg&#34; alt=&#34;HTTP/3 Bruk&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Men man ser også at HTTP/3 har vesentlig forbedret tiden det tar både å etablere kommunikasjon samt også hvordan håndtere pakketap.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/http2-http3.png&#34; alt=&#34;HTTP3&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Så er forandret i HTTP/3 ?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I stedet for TCP benytter HTTP/3 seg av QUIC (Quick UDP Internet Connections) som overføringsprotokoll som er bygget på UDP. Men samtidig tilbyr flere av TCP egenskapene som pålitlighet og overbelastingskontroll algoritmer som f.eks CUBIC eller New Reno. (Dette krever dog at UDP/443 er åpnet i brannmuren)&lt;/li&gt;
+&lt;li&gt;Benytter seg QPACK for komprimering av HTTP headere (Sammenlignet med HPACK som ble brukt i HTTP/2)&lt;/li&gt;
+&lt;li&gt;Krever TLS kryptering for kommunikasjon (Var ikke et krav i HTTP/2, selv om flere leverandører krevde det)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Samtidig er også kryptering som før har blitt håndtert av TLS nå gjort direkte i kommunikasjonsprotokollen som gjør at trafikk inspeksjon som før ble gjort av brannmurer/proxy tjenester ikke lenger er mulig.&lt;/p&gt;
+&lt;h2 id=&#34;hvordan-sikre-trafikk-fremover-&#34;&gt;Hvordan sikre trafikk fremover ?&lt;/h2&gt;
+&lt;p&gt;Med mer og mer av internett trafikken beveger seg mot bruk av HTTP/3 samtidig som standarden blir ferdigstilt, betyr dette også at flere organisasjoner må ta stilling til hvordan det skal håndtere HTTP/3 trafikken. Flere leverandører nå begynner å komme med støtte for HTTP/3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blant annet så kommer nå Microsoft med en ny versjon av SMB som også støtter QUIC (&lt;a href=&#34;https://techcommunity.microsoft.com/t5/itops-talk-blog/smb-over-quic-files-without-the-vpn/ba-p/1183449&#34;&gt;https://techcommunity.microsoft.com/t5/itops-talk-blog/smb-over-quic-files-without-the-vpn/ba-p/1183449&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Google Cloud støtter QUIC (&lt;a href=&#34;https://cloud.google.com/blog/products/networking/cloud-cdn-and-load-balancing-support-http3&#34;&gt;https://cloud.google.com/blog/products/networking/cloud-cdn-and-load-balancing-support-http3&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Citrix ADC Quic (&lt;a href=&#34;https://docs.citrix.com/en-us/citrix-adc/current-release/system/quic.html&#34;&gt;https://docs.citrix.com/en-us/citrix-adc/current-release/system/quic.html&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Akkurat nå er det få til ingen brannmur/proxy leverandører som supporterer inspeksjon av QUIC og HTTP/3 og den generelle anbefalingen er å deaktivere de protokollene i brannmuren, men dette gjør at klientene som sitter på innsiden vil falle tilbake til HTTP 1.1 med TLS. Samtidig beveger flere seg på utsiden av den tradisjonelle brannmuren ved å jobbe fra hjemme eller andre lokasjoner, som gjør at den tradisjonelle brannmuren mister litt av den orginale hensikten ved å beskytte trafikken mellom innsiden og utsiden.&lt;/p&gt;
+</description> 
+    </item>
     
     <item>
       <title>Sikring av Kubernetes og tjenester</title>
