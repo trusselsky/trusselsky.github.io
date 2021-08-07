@@ -15,7 +15,9 @@ searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ---
-Om du ønsker informasjon via vårt nyhetsbrev, legg inn epost adressen din her. Vi prøver å holde oss til en epost utsendelse med oppsummeringer hver 14 dag, med mindre det er noe kritisk vil vi prøve å formidle så fort som mulig.  
+Om du ønsker informasjon via vårt nyhetsbrev, legg inn epost adressen din her. Vi prøver å holde oss til en epost utsendelse med oppsummeringer hver uke, med mindre det er noe kritisk vil vi prøve å formidle så fort som mulig.  
+
+Om man ikke ønsker å bruke epost, så kan du også gjerne benytte RSS eller bare bookmarke siden. 
 
 Nyhetsbrev tjenesten benytter Mailchimp for e-post utsending. 
 {{< rawhtml >}}
