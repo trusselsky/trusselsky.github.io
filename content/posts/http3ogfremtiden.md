@@ -91,5 +91,5 @@ Med mer og mer av internett trafikken beveger seg mot bruk av HTTP/3 samtidig so
 
 Akkurat nå er det få til ingen brannmur/proxy leverandører som supporterer inspeksjon av QUIC og HTTP/3 og den generelle anbefalingen er å deaktivere de protokollene i brannmuren, men dette gjør at klientene som sitter på innsiden vil falle tilbake til HTTP 1.1 med TLS. Samtidig beveger flere seg på utsiden av den tradisjonelle brannmuren ved å jobbe fra hjemme eller andre lokasjoner, som gjør at den tradisjonelle brannmuren mister litt av den orginale hensikten ved å beskytte trafikken mellom innsiden og utsiden. 
 
-
+Derfor vil det være viktig fremover å se på løsninger som gir mer innsikt direkte fra endepunktet perspektivet for å kunne ivareta sikkerhet på samme måte, men samtidig ivareta forbedringene som HTTP/3 kommer med. 
 
