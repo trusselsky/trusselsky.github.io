@@ -5,10 +5,58 @@
     <link>https://trusselsky.github.io/posts/</link>
     <description>Recent content in Posts on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Aug 2021 21:56:46 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Aug 2021 16:44:01 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ProxyShell - Nye sårbarheter mot Exchange</title>
+      <link>https://trusselsky.github.io/posts/proxyshellexchange/</link>
+      <pubDate>Mon, 09 Aug 2021 16:44:01 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/proxyshellexchange/</guid>
+      <description>&lt;p&gt;Under årets BlackHat Conference, ble det presentert detaljer rundt nye sårbarheter som ble kjent i Microsoft Exchange som nå har blitt dubbet til &amp;ldquo;ProxyShell&amp;rdquo; som er en kombinasjon av 3 sårbarheter.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2021-34473&lt;/strong&gt; - Pre-auth Path Confusion leads to ACL Bypass (Fikset i April av KB5001779)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2021-34523&lt;/strong&gt; - Elevation of Privilege on Exchange PowerShell Backend (Fikset i April av KB5001779)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2021-31207&lt;/strong&gt; - Post-auth Arbitrary-File-Write leads to RCE (Fikset i Oppdatering i Mai av KB5003435)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sårbarhetene kan gjøre at uvedkommende kan få tilgang til Exchange løsningen å laste ned epost databaser som da inneholder alt av f.eks epost kontoer (epost, kalender,kontakter osv) siden tilgangen som uvedkommende får ved å utnytte sårbarhetene er lokal system.&lt;/p&gt;
+&lt;p&gt;Viktig at man dobbeltsjekker hvilken versjon man er på &amp;ndash;&amp;gt; &lt;a href=&#34;https://exchangeserverversions.blogspot.com/2016/01/exchange-server-2016.html&#34;&gt;https://exchangeserverversions.blogspot.com/2016/01/exchange-server-2016.html&lt;/a&gt; (Her er en liste for Exchange 2016)&lt;/p&gt;
+&lt;p&gt;MERK: Dette er ikke samme sårbarhet som ble utnyttet i angrepet mot Stortinget som også benyttet en sårbarhet mot Exchange, som heter ProxyLogin.&lt;/p&gt;
+&lt;p&gt;Disse sårbarhetene ble presentert av sikkerhetsforsker Orange Tsai (&lt;a href=&#34;https://twitter.com/orange_8361&#34;&gt;https://twitter.com/orange_8361&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Du kan se presentasjonen her &amp;ndash;&amp;gt; &lt;a href=&#34;https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-ProxyLogon-Is-Just-The-Tip-Of-The-Iceberg-A-New-Attack-Surface-On-Microsoft-Exchange-Server.pdf?fbclid=IwAR2V0-4k2yb8dmPP5Mksd8iHYTOfE6sBwygMt4wjq3M9be8Tw6TlH0andhA&#34;&gt;https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-ProxyLogon-Is-Just-The-Tip-Of-The-Iceberg-A-New-Attack-Surface-On-Microsoft-Exchange-Server.pdf?fbclid=IwAR2V0-4k2yb8dmPP5Mksd8iHYTOfE6sBwygMt4wjq3M9be8Tw6TlH0andhA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Her kan man også se et video eksempel hvor noen har laget script som utnytter alle sårbarhetene for å kunne ekspotere epost fra Exchange serveren.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LbIYPFrltdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt; Samtidig kan man også se at bare i Norge er det i overkant av 100+ som har offentlige Exchange servere som fortsatt er sårbare.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/proxyshell.jpg&#34; alt=&#34;ProxyLogin&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Samtidig er det flere nå som merker økt Exchange trafikk, i tillegg er det noen angripere nå som allerede har begynt å utnytte sårbarhetene.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;My Exchange honeypot has somebody dropping files and executing commands. &lt;a href=&#34;https://t.co/pMVsl7y4iy&#34;&gt;https://t.co/pMVsl7y4iy&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kevin Beaumont (@GossiTheDog) &lt;a href=&#34;https://twitter.com/GossiTheDog/status/1423764613829701632?ref_src=twsrc%5Etfw&#34;&gt;August 6, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;indikatorer&#34;&gt;Indikatorer&lt;/h2&gt;
+&lt;p&gt;Flere som scanner nå etter sårbare Exchange servere prøver å utnytte sårbarheten via Autodiscovery bibloteket på CAS serverene.
+Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://exchange-server/autodiscover/autodiscover.json?@abc
+.com/owa/?&amp;amp;Email=autodiscover/autodiscover.json%3F@abc.com 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Om din Exchange løsning fortsatt er sårbar vil den respondere med en HTTP 302 kode tilbake.&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Sikkerhetsmekanismerwindows10</title>
+      <link>https://trusselsky.github.io/posts/sikkerhetsmekanismerwindows10/</link>
+      <pubDate>Mon, 09 Aug 2021 16:41:09 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/sikkerhetsmekanismerwindows10/</guid>
+      <description></description> 
+    </item>
     
     <item>
       <title>HTTP/3 og fremtidens websikkerhet</title>
