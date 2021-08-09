@@ -94,7 +94,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
 &lt;p&gt;&lt;a href=&#34;http://commonmark.org&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg&#34; alt=&#34;made-with-Markdown&#34;  /&gt;
 &lt;/a&gt; &lt;a href=&#34;https://github.com/trusselsky/trusselsky.github.io/commits/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg&#34; alt=&#34;GitHub commits&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt.&lt;/strong&gt; Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser.&lt;/p&gt;
 
 
 
@@ -121,7 +121,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
         &lt;td&gt;88.99.30.123&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;119925&lt;/td&gt;
+        &lt;td&gt;135595&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -130,7 +130,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
         &lt;td&gt;51.13.78.215&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;33021&lt;/td&gt;
+        &lt;td&gt;44028&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -148,7 +148,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
         &lt;td&gt;222.255.217.138&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;5010&lt;/td&gt;
+        &lt;td&gt;7779&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -181,6 +181,15 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
     
             
              &lt;tr&gt;
+        &lt;td&gt;115.243.122.138&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;India&lt;/td&gt;
+        &lt;td&gt;3104&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
         &lt;td&gt;51.211.5.199&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United Kingdom&lt;/td&gt;
@@ -194,6 +203,15 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United Kingdom&lt;/td&gt;
         &lt;td&gt;3101&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;117.214.98.105&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;India&lt;/td&gt;
+        &lt;td&gt;3100&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -233,348 +251,6 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
       &lt;/tr&gt;
       
     
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.43.65&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;588&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.43.63&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;500&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.43.62&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;370&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;49.12.42.115&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;363&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;87.251.70.129&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;358&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.43.64&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;352&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.220.163.18&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Ukraine&lt;/td&gt;
-        &lt;td&gt;213&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.47.130&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;210&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;202.158.246.40&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;207&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.204.59.163&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;197&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;213.142.159.230&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Turkey&lt;/td&gt;
-        &lt;td&gt;109&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.220.163.20&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Ukraine&lt;/td&gt;
-        &lt;td&gt;101&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;110.172.136.138&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;90&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;223.239.129.27&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;79&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;185.78.167.40&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;74&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;185.78.167.38&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;73&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;221.150.62.69&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Korea&lt;/td&gt;
-        &lt;td&gt;72&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;118.128.50.136&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Korea&lt;/td&gt;
-        &lt;td&gt;65&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.220.163.63&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Ukraine&lt;/td&gt;
-        &lt;td&gt;60&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.47.180&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;46&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;62.68.254.46&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Egypt&lt;/td&gt;
-        &lt;td&gt;38&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;78.128.91.5&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Bulgaria&lt;/td&gt;
-        &lt;td&gt;29&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;175.137.59.76&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Malaysia&lt;/td&gt;
-        &lt;td&gt;12&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;182.73.131.27&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;8&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;202.21.120.66&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Mongolia&lt;/td&gt;
-        &lt;td&gt;4&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;211.45.198.120&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Korea&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;194.30.93.42&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Spain&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3.131.236.42&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;218.94.34.54&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;211.204.191.6&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Korea&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.46.80&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;183.196.65.209&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;195.78.43.221&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Ukraine&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;185.87.50.55&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;221.179.249.226&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;176.106.243.230&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;27.39.106.97&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;54.37.74.253&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/strong&gt;&lt;/p&gt;
@@ -599,63 +275,63 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
             
              &lt;tr&gt;
         &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;56660&lt;/td&gt;
+        &lt;td&gt;71413&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;39461&lt;/td&gt;
+        &lt;td&gt;43191&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;31858&lt;/td&gt;
+        &lt;td&gt;34477&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\USER&lt;/td&gt;
-        &lt;td&gt;21341&lt;/td&gt;
+        &lt;td&gt;22852&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\TEST&lt;/td&gt;
-        &lt;td&gt;21307&lt;/td&gt;
+        &lt;td&gt;22819&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\SERVER&lt;/td&gt;
-        &lt;td&gt;21214&lt;/td&gt;
+        &lt;td&gt;22725&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;3994&lt;/td&gt;
+        &lt;td&gt;4324&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;ADMINTN2019\Administrator&lt;/td&gt;
-        &lt;td&gt;2412&lt;/td&gt;
+        &lt;td&gt;2658&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;1583&lt;/td&gt;
+        &lt;td&gt;1667&lt;/td&gt;
       &lt;/tr&gt;
       
     
