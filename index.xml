@@ -122,15 +122,6 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     </item>
     
     <item>
-      <title>Sikkerhetsmekanismerwindows10</title>
-      <link>https://trusselsky.github.io/posts/sikkerhetsmekanismerwindows10/</link>
-      <pubDate>Mon, 09 Aug 2021 16:41:09 +0200</pubDate>
-      
-      <guid>https://trusselsky.github.io/posts/sikkerhetsmekanismerwindows10/</guid>
-      <description></description> 
-    </item>
-    
-    <item>
       <title>Stats</title>
       <link>https://trusselsky.github.io/stats/</link>
       <pubDate>Sat, 07 Aug 2021 01:50:33 +0200</pubDate>
@@ -265,6 +256,15 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
+        &lt;td&gt;5.62.58.65&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1723&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
         &lt;td&gt;20.198.115.140&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
@@ -287,15 +287,6 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;Russia&lt;/td&gt;
         &lt;td&gt;998&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;80.82.77.85&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Netherlands&lt;/td&gt;
-        &lt;td&gt;988&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -323,21 +314,21 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;74513&lt;/td&gt;
+        &lt;td&gt;76395&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;44961&lt;/td&gt;
+        &lt;td&gt;45146&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;34956&lt;/td&gt;
+        &lt;td&gt;35109&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -365,21 +356,21 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;5260&lt;/td&gt;
+        &lt;td&gt;6076&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;ADMINTN2019\Administrator&lt;/td&gt;
-        &lt;td&gt;3315&lt;/td&gt;
+        &lt;td&gt;3743&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;1827&lt;/td&gt;
+        &lt;td&gt;2215&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -393,7 +384,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;\AZUREUSER&lt;/td&gt;
-        &lt;td&gt;523&lt;/td&gt;
+        &lt;td&gt;524&lt;/td&gt;
       &lt;/tr&gt;
       
     
