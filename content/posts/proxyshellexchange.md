@@ -2,7 +2,7 @@
 title: "ProxyShell - Nye sårbarheter mot Exchange"
 date: 2021-08-09T16:44:01+02:00
 draft: false
-tags: [""]
+tags: ["Exchange","Microsoft"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
