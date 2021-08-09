@@ -127,13 +127,12 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
       <pubDate>Sat, 07 Aug 2021 01:50:33 +0200</pubDate>
       
       <guid>https://trusselsky.github.io/stats/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet måler eller kjente IP addresser som blir brukt for ondsinnet formål.&lt;!-- raw HTML omitted --&gt;  Data kommer fra vårt Azure miljø å blir oppdatert ved neste datainnsamling. (Historiske data viser de siste 30 dagene)&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet måler eller kjente IP addresser som blir brukt for ondsinnet formål.&lt;!-- raw HTML omitted --&gt;  Data kommer fra vårt Azure miljø å blir oppdatert ved neste datainnsamling. (Historiske data viser de siste 30 dagene)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://commonmark.org&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg&#34; alt=&#34;made-with-Markdown&#34;  /&gt;
 &lt;/a&gt; &lt;a href=&#34;https://github.com/trusselsky/trusselsky.github.io/commits/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg&#34; alt=&#34;GitHub commits&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt.&lt;/strong&gt; Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser.&lt;/p&gt;
+&lt;h3 id=&#34;feilet-pålogging-via-rdp---land&#34;&gt;Feilet pålogging via RDP - Land&lt;/h3&gt;
+&lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt. Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser.&lt;/p&gt;
 
 
 
@@ -292,7 +291,8 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;feilet-pålogging-via-rdp---upn&#34;&gt;Feilet pålogging via RDP - UPN&lt;/h3&gt;
+&lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/p&gt;
 
 
 
@@ -413,6 +413,109 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;domainname\administrator&lt;/td&gt;
         &lt;td&gt;274&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;h3 id=&#34;trafikk-port---land&#34;&gt;Trafikk port - Land&lt;/h3&gt;
+&lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/p&gt;
+
+
+
+
+
+&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+      &lt;th&gt;Port&lt;/th&gt;
+      &lt;th&gt;Land&lt;/th&gt;
+      &lt;th&gt;Antall&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        
+        
+        
+            
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Netherlands&lt;/td&gt;
+        &lt;td&gt;3278&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Germany&lt;/td&gt;
+        &lt;td&gt;3212&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Vietnam&lt;/td&gt;
+        &lt;td&gt;2793&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;India&lt;/td&gt;
+        &lt;td&gt;1265&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Belarus&lt;/td&gt;
+        &lt;td&gt;793&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;775&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;135&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;275&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Thailand&lt;/td&gt;
+        &lt;td&gt;248&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Korea&lt;/td&gt;
+        &lt;td&gt;243&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;445&lt;/td&gt;
+        &lt;td&gt;India&lt;/td&gt;
+        &lt;td&gt;175&lt;/td&gt;
       &lt;/tr&gt;
       
     

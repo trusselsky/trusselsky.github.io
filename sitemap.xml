@@ -5,10 +5,19 @@
     <loc>https://trusselsky.github.io/faq/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
+    <loc>https://trusselsky.github.io/tags/exchange/</loc>
+    <lastmod>2021-08-09T16:44:01+02:00</lastmod>
+  </url><url>
+    <loc>https://trusselsky.github.io/tags/microsoft/</loc>
+    <lastmod>2021-08-09T16:44:01+02:00</lastmod>
+  </url><url>
     <loc>https://trusselsky.github.io/posts/</loc>
     <lastmod>2021-08-09T16:44:01+02:00</lastmod>
   </url><url>
     <loc>https://trusselsky.github.io/posts/proxyshellexchange/</loc>
+    <lastmod>2021-08-09T16:44:01+02:00</lastmod>
+  </url><url>
+    <loc>https://trusselsky.github.io/tags/</loc>
     <lastmod>2021-08-09T16:44:01+02:00</lastmod>
   </url><url>
     <loc>https://trusselsky.github.io/</loc>
@@ -30,9 +39,6 @@
     <lastmod>2021-08-04T09:18:38+02:00</lastmod>
   </url><url>
     <loc>https://trusselsky.github.io/posts/sikringavkubernetes/</loc>
-    <lastmod>2021-08-04T09:18:38+02:00</lastmod>
-  </url><url>
-    <loc>https://trusselsky.github.io/tags/</loc>
     <lastmod>2021-08-04T09:18:38+02:00</lastmod>
   </url><url>
     <loc>https://trusselsky.github.io/tags/github/</loc>
@@ -57,9 +63,6 @@
     <lastmod>2021-07-27T18:26:31+02:00</lastmod>
   </url><url>
     <loc>https://trusselsky.github.io/tags/cve-2021-34527/</loc>
-    <lastmod>2021-07-27T16:33:39+02:00</lastmod>
-  </url><url>
-    <loc>https://trusselsky.github.io/tags/microsoft/</loc>
     <lastmod>2021-07-27T16:33:39+02:00</lastmod>
   </url><url>
     <loc>https://trusselsky.github.io/tags/print-spooler/</loc>
