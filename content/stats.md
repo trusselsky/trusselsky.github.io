@@ -34,7 +34,7 @@ editPost:
 
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/trusselsky/trusselsky.github.io/commits/)
 
-**Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt.** 
+**Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt.** Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser. 
 
 {{< table "" >}}
 
