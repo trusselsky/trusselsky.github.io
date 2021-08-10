@@ -5,10 +5,37 @@
     <link>https://trusselsky.github.io/posts/</link>
     <description>Recent content in Posts on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Aug 2021 16:44:01 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 11 Aug 2021 00:31:36 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Poly Network hacket, 600 millioner dollar tatt</title>
+      <link>https://trusselsky.github.io/posts/polynetworkshack/</link>
+      <pubDate>Wed, 11 Aug 2021 00:31:36 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/polynetworkshack/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/polyhack.JPG&#34; alt=&#34;HTTP3&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Det ble kjent tidligere i dag, at en av de store DeFi platformene Poly Network ble hacket via en svakhet i en mekanisme som kalles for EthCrossChainManager som brukes for validering på tvers av ulike blockchain prosjekter. Hvor da angriperne overførte 610 millioner dollar til 3 ulike addresser fordelt på ulik valuta.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$273M Ethereum&lt;/li&gt;
+&lt;li&gt;$253M Binance Smart Chain&lt;/li&gt;
+&lt;li&gt;$85M Polygon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Man kan se hele analysen av sårbarheten av angrepet her &amp;ndash;&amp;gt;&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Poly has this contract called the &amp;quot;EthCrossChainManager&amp;quot;. It&amp;#39;s basically a privileged contract that has the right to trigger messages from another chain. It&amp;#39;s a pretty standard thing for cross-chain projects.&lt;/p&gt;&amp;mdash; God-like Natural Number Creator Person (TM, R) (@kelvinfichter) &lt;a href=&#34;https://twitter.com/kelvinfichter/status/1425217047898869762?ref_src=twsrc%5Etfw&#34;&gt;August 10, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Når en av de som gjennomføre angrepet skulle prøve å overføre med USDT TOKEN, ble han tipset av noen andre at han ikke måtte bruke det for da ble han svartlistet. Da fikk vedkommende som tipset dem om det overført 13.37 Ether samtidig også startet en strøm av flere folk som ønsker at hackeren skal overføre beløp til dem også (&lt;a href=&#34;https://etherscan.io/tx/0xdf3afc47c7914e06ddb1be19afcd769e558111d353e55273a62c4a96e6a6090f&#34;&gt;https://etherscan.io/tx/0xdf3afc47c7914e06ddb1be19afcd769e558111d353e55273a62c4a96e6a6090f&lt;/a&gt;) som man også kan se her at felre etterspør valuta &amp;ndash;&amp;gt; &lt;a href=&#34;https://etherscan.io/address/0xc8a65fadf0e0ddaf421f28feab69bf6e2e589963&#34;&gt;https://etherscan.io/address/0xc8a65fadf0e0ddaf421f28feab69bf6e2e589963&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Klikk videre for å se hele analysen. Her kan man også se status knyttet til undersøkelsen fra Poly Network selv.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Assets involved include &lt;a href=&#34;https://twitter.com/search?q=%24DAI&amp;amp;src=ctag&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;$DAI&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%24UNI&amp;amp;src=ctag&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;$UNI&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%24SHIB&amp;amp;src=ctag&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;$SHIB&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%24FEI&amp;amp;src=ctag&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;$FEI&lt;/a&gt;.&lt;br&gt;ETH:0xC8a65Fadf0e0dDAf421F28FEAb69Bf6E2E589963&lt;br&gt;&lt;br&gt;We call on miners of affected blockchain and crypto exchanges to blacklist tokens coming from the above addresses. &lt;a href=&#34;https://twitter.com/MakerDAO?ref_src=twsrc%5Etfw&#34;&gt;@MakerDAO&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Uniswap?ref_src=twsrc%5Etfw&#34;&gt;@Uniswap&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Shibtoken?ref_src=twsrc%5Etfw&#34;&gt;@Shibtoken&lt;/a&gt; &lt;a href=&#34;https://twitter.com/feiprotocol?ref_src=twsrc%5Etfw&#34;&gt;@feiprotocol&lt;/a&gt;&lt;/p&gt;&amp;mdash; Poly Network (@PolyNetwork2) &lt;a href=&#34;https://twitter.com/PolyNetwork2/status/1425091995911995405?ref_src=twsrc%5Etfw&#34;&gt;August 10, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Noe av valutaen er nå fryst, mer info følger.&lt;/p&gt;
+</description> 
+    </item>
     
     <item>
       <title>ProxyShell - Nye sårbarheter mot Exchange</title>
