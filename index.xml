@@ -154,7 +154,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
       <pubDate>Sat, 07 Aug 2021 01:50:33 +0200</pubDate>
       
       <guid>https://trusselsky.github.io/stats/</guid>
-      <description>&lt;p&gt;Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet måler eller kjente IP addresser som blir brukt for ondsinnet formål.&lt;!-- raw HTML omitted --&gt;  Data kommer fra vårt Azure miljø å blir oppdatert ved neste datainnsamling. (Historiske data viser de siste 30 dagene)&lt;/p&gt;
+      <description>&lt;p&gt;Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet måler eller kjente IP addresser som blir brukt for ondsinnet formål.&lt;!-- raw HTML omitted --&gt;  Data kommer fra vårt Azure miljø å blir oppdatert ved neste datainnsamling. (Historiske data viser de siste 30 dagene) (Oppdatert 17. August)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://commonmark.org&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg&#34; alt=&#34;made-with-Markdown&#34;  /&gt;
 &lt;/a&gt; &lt;a href=&#34;https://github.com/trusselsky/trusselsky.github.io/commits/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg&#34; alt=&#34;GitHub commits&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;
@@ -183,136 +183,136 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
-        &lt;td&gt;88.99.30.123&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;135595&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
         &lt;td&gt;51.13.78.215&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;66042&lt;/td&gt;
+        &lt;td&gt;99063&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;51.38.214.191&lt;/td&gt;
+        &lt;td&gt;84.17.46.243&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;11003&lt;/td&gt;
+        &lt;td&gt;Italy&lt;/td&gt;
+        &lt;td&gt;10163&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;222.255.217.138&lt;/td&gt;
+        &lt;td&gt;159.242.234.136&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;7875&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;10159&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;94.232.41.158&lt;/td&gt;
+        &lt;td&gt;84.17.46.191&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;3113&lt;/td&gt;
+        &lt;td&gt;Italy&lt;/td&gt;
+        &lt;td&gt;10126&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;203.125.3.90&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Singapore&lt;/td&gt;
-        &lt;td&gt;3112&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;124.29.232.63&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Pakistan&lt;/td&gt;
-        &lt;td&gt;3106&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;80.237.31.238&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;3104&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;115.243.122.138&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;3104&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;182.253.194.1&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Indonesia&lt;/td&gt;
-        &lt;td&gt;3102&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;51.211.5.199&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;3102&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;51.36.2.139&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;3101&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;180.183.19.21&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Thailand&lt;/td&gt;
-        &lt;td&gt;3101&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;5.62.58.65&lt;/td&gt;
+        &lt;td&gt;5.62.43.157&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;3100&lt;/td&gt;
+        &lt;td&gt;10122&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;117.214.98.105&lt;/td&gt;
+        &lt;td&gt;135.181.130.183&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;3100&lt;/td&gt;
+        &lt;td&gt;Canada&lt;/td&gt;
+        &lt;td&gt;8624&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;13.82.108.220&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;8238&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;173.225.101.9&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;5383&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;212.102.33.140&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Italy&lt;/td&gt;
+        &lt;td&gt;4660&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;159.242.234.200&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;4312&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;177.129.160.109&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Brazil&lt;/td&gt;
+        &lt;td&gt;4135&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;5.62.24.33&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;4114&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;20.198.115.140&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;3518&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;51.39.226.226&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;3128&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;197.45.213.88&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Egypt&lt;/td&gt;
+        &lt;td&gt;3114&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -341,105 +341,105 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;116015&lt;/td&gt;
+        &lt;td&gt;129015&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;55923&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;35963&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\USER&lt;/td&gt;
-        &lt;td&gt;22920&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\TEST&lt;/td&gt;
-        &lt;td&gt;22851&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\SERVER&lt;/td&gt;
-        &lt;td&gt;22743&lt;/td&gt;
+        &lt;td&gt;53848&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;8616&lt;/td&gt;
+        &lt;td&gt;22151&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;ADMINTN2019\Administrator&lt;/td&gt;
-        &lt;td&gt;4127&lt;/td&gt;
+        &lt;td&gt;10925&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;4017&lt;/td&gt;
+        &lt;td&gt;9724&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\SYSADMIN&lt;/td&gt;
-        &lt;td&gt;527&lt;/td&gt;
+        &lt;td&gt;\ADMIN&lt;/td&gt;
+        &lt;td&gt;9267&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\USER&lt;/td&gt;
+        &lt;td&gt;6869&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\AZUREUSER&lt;/td&gt;
-        &lt;td&gt;524&lt;/td&gt;
+        &lt;td&gt;2711&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\LOCALADMIN&lt;/td&gt;
+        &lt;td&gt;2069&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\VMADMIN&lt;/td&gt;
+        &lt;td&gt;2048&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\AZUREADMIN&lt;/td&gt;
-        &lt;td&gt;520&lt;/td&gt;
+        &lt;td&gt;2045&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\Administrador&lt;/td&gt;
-        &lt;td&gt;360&lt;/td&gt;
+        &lt;td&gt;\SYSADMIN&lt;/td&gt;
+        &lt;td&gt;1728&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;HACKME01\Administrador&lt;/td&gt;
-        &lt;td&gt;358&lt;/td&gt;
+        &lt;td&gt;\CAJA1&lt;/td&gt;
+        &lt;td&gt;1716&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\admin&lt;/td&gt;
-        &lt;td&gt;352&lt;/td&gt;
+        &lt;td&gt;\SERVERADMIN&lt;/td&gt;
+        &lt;td&gt;1683&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME\Administrator&lt;/td&gt;
+        &lt;td&gt;1376&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -469,8 +469,8 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Netherlands&lt;/td&gt;
-        &lt;td&gt;5465&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;22759&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -478,7 +478,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Denmark&lt;/td&gt;
-        &lt;td&gt;4977&lt;/td&gt;
+        &lt;td&gt;8876&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -486,15 +486,23 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Germany&lt;/td&gt;
-        &lt;td&gt;4863&lt;/td&gt;
+        &lt;td&gt;8683&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;2823&lt;/td&gt;
+        &lt;td&gt;Netherlands&lt;/td&gt;
+        &lt;td&gt;8618&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;6479&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -502,7 +510,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Brazil&lt;/td&gt;
-        &lt;td&gt;1634&lt;/td&gt;
+        &lt;td&gt;3791&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -510,15 +518,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;1265&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;1029&lt;/td&gt;
+        &lt;td&gt;2798&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -526,23 +526,23 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;994&lt;/td&gt;
+        &lt;td&gt;2608&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Belarus&lt;/td&gt;
-        &lt;td&gt;813&lt;/td&gt;
+        &lt;td&gt;Chile&lt;/td&gt;
+        &lt;td&gt;2024&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Mexico&lt;/td&gt;
-        &lt;td&gt;574&lt;/td&gt;
+        &lt;td&gt;Italy&lt;/td&gt;
+        &lt;td&gt;1981&lt;/td&gt;
       &lt;/tr&gt;
       
     
