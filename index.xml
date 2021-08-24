@@ -5,7 +5,7 @@
     <link>https://trusselsky.github.io/</link>
     <description>Recent content on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Aug 2021 00:31:36 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 24 Aug 2021 08:16:36 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -79,6 +79,30 @@ F.eks at de ikke får informasjon om at det er en sårbarhet knyttet til et spes
 &lt;h3 id=&#34;hvordan-kan-jeg-bidra&#34;&gt;Hvordan kan jeg bidra?&lt;/h3&gt;
 &lt;p&gt;Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som &amp;ldquo;Issues&amp;rdquo;
 Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;, jeg biter ikke..&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>DDoS angrep og trender fremover</title>
+      <link>https://trusselsky.github.io/posts/merddos/</link>
+      <pubDate>Tue, 24 Aug 2021 08:16:36 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/merddos/</guid>
+      <description>&lt;p&gt;Tidligere i sommer stoppet Cloudflare det som er beskrevet som det største DDoS angrepet noensinne, med lit over 17.2 millioner forespørsler-per-sekund over HTTP trafikk (som ofte gjøres for å kamuflere angrepet som mer legitim trafikk). Til sammenligning så håndterer Cloudflare som i dag leverer cirka 13% av all HTTP trafikk på verdensbasis, ca 25 millioner forespørsler-per-sekund. Motivet bak å kjøre DDoS angrep er for å kunne gjøre tjenester utilgjengelig eller for å ta ned infrastruktur med å overbelaste systemene.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/ddos.jpg&#34; alt=&#34;ddos&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Ofte kjøres slike angrep fra kontrollerte Botnet. Som er maskiner som er infisert med malware som igjen blir styrt av en Botnet Operatør for å kunne utføre DDoS angrep.&lt;/p&gt;
+&lt;p&gt;Samtidig kan vi også se at det skjer flere DDoS mot Norge organisasjoner, som man kan se mer info av her &amp;ndash;&amp;gt; (&lt;a href=&#34;https://radar.cloudflare.com/no&#34;&gt;https://radar.cloudflare.com/no&lt;/a&gt;) som ofte gjøres av ulike årsaker.&lt;/p&gt;
+&lt;p&gt;1: For å gjennomføre et ransomware angrep (Enten betaler du X antall kroner eller så vil din tjeneste være utilgjengelig) Dette har vi sett også kan gjøres samtidig som hackere gjør angrep via andre vektorer også. Dette er blant annet noe som ble gjort mot Vinmonopolet i fjor høst &amp;ndash;&amp;gt; &lt;a href=&#34;https://www.digi.no/artikler/hackerne-tok-ned-vinmonopolet-no-i-dag-har-de-varslet-et-mye-verre-angrep/504268&#34;&gt;https://www.digi.no/artikler/hackerne-tok-ned-vinmonopolet-no-i-dag-har-de-varslet-et-mye-verre-angrep/504268&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2: For å gjøre en tjeneste utilgjengelig, enten politisk mål eller andre årsaker.&lt;/p&gt;
+&lt;p&gt;Samtidig vil vi se en trend fremover med flere DDoS angrep. Litt av bakgrunn for dette er fordi at flere applikasjoner og tjenester nå bytter gradvis over til å bruke UDP basert transport i stedet for tradisjonelle TCP. Dette da for å kunne redusere latency å andre hopp frem og tilbake på kommunikasjon samt gi en bedre brukeropplevelse på noen tjenester. På toppen av UDP er det flere nå som benytter DTLS som protokoll. DTLS er en protokoll som er hybrid som gir same pålitelighet som TCP men levert via UDP. Spesielt er det tjenester som Citrix HDX, Microsoft RDP samt Zscaler og noen VPN leverandører som DTLS som kommunikasjonsprotoll.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/dtls.jpg&#34; alt=&#34;DTLS&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;En grunn til at dette vil gi flere DDoS angrep er pga hvordan de ulike leverandørene har implementert DTLS protokollen. Som en del av standarden er det en attributt som er angitt i standarden som en opsjon (å er derfor ikke nødvendig). Denne atributten gjør at om noen initierer et angrep mot en tjeneste via DTLS, vil tjeneren svare med en Cookie under (HelloVerifyRequest) for å forsikre seg om at kommunikasjonen kommer fra en legitim klient, den kommunikasjon blir etablert. For tjenester som ikke har implementert denne attributten på tjenester som bruker DTLS vil angripere i visse sammenhenger kunne utnytte dette for et omvendt DDoS angrep.&lt;/p&gt;
+&lt;p&gt;De siste årene har det vært en svakhet som har kommet frem både fra Microsoft RDP (via RD Gateway) og Citrix NetScaler ADC (for Citrix sesjoner) du kan også lese en eldre artikkel her fra Palo Alto om problematikken som var tidligere på Microsoft &amp;ndash;&amp;gt; &lt;a href=&#34;https://unit42.paloaltonetworks.com/dtls-vulnerabilities-cve-2014-6321/&#34;&gt;https://unit42.paloaltonetworks.com/dtls-vulnerabilities-cve-2014-6321/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Den andre utfordringen er at mer og mer av vanlig web trafikk beveger seg over til å bruke HTTP/3 som nå begynner å bli ferdig som en standard. Statistikk som man kan se her, så er cirka 10% av all trafikk som går mot Norske sider via Cloudflare basert på HTTP/3 &amp;ndash;&amp;gt; &lt;a href=&#34;https://radar.cloudflare.com/no&#34;&gt;https://radar.cloudflare.com/no&lt;/a&gt; du kan også lese mer om HTTP/3 her &amp;ndash;&amp;gt; &lt;a href=&#34;https://trusselsky.no/posts/http3ogfremtiden/&#34;&gt;https://trusselsky.no/posts/http3ogfremtiden/&lt;/a&gt;
+Utfordringen ligger i trafikk inspeksjon. Mange av dagens brannmur/sikkerhetstjenester er avhengig av å kunne inspisere trafikken for å kunne avdekke angrep eller skadelig innhold. Med HTTP/3 så er det ikke mulig å få direkte inspeksjon av innholdet å derfor vil det vær enklere for angripere å kunne kamuflere innholdet når de gjennomfører et angrep. Samtidig så legger HTTP/3 mer trykk på serveren i form av ressurser for å håndtere kommunikasjonen, som gjør også at et DDoS angrep via HTTP/3 vil ikke kreve like mye trafikk for å kunne ta ned en tjeneste.&lt;/p&gt;
+&lt;p&gt;Heldigvis har vi ennå ikke sett store angrep som har blitt gjort via HTTP/3, men basert på trenden vil nok dette også øke fremover &amp;ndash;&amp;gt; &lt;a href=&#34;https://blog.cloudflare.com/ddos-attack-trends-for-2021-q2/&#34;&gt;https://blog.cloudflare.com/ddos-attack-trends-for-2021-q2/&lt;/a&gt; som man må være varsom til nettverksaktivitet mot eksterne tjenester. Spesielt om man som virksomhet leverer f.eks nettbutikker kan man være veldig utsatt for slike angrep.&lt;/p&gt;
 </description> 
     </item>
     
@@ -160,394 +184,13 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;feilet-pålogging-via-rdp---land&#34;&gt;Feilet pålogging via RDP - Land&lt;/h3&gt;
 &lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt. Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser.&lt;/p&gt;
-
-
-
-
-
-
-&lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-      &lt;th&gt;IP Addresse&lt;/th&gt;
-      &lt;th&gt;Event ID&lt;/th&gt;
-      &lt;th&gt;Land&lt;/th&gt;
-      &lt;th&gt;Antall påloggings forsøk&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        
-        
-        
-            
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;51.13.78.215&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;99063&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;84.17.46.243&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;10163&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;159.242.234.136&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;10159&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;84.17.46.191&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;10126&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;5.62.43.157&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;10122&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;135.181.130.183&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Canada&lt;/td&gt;
-        &lt;td&gt;8624&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;13.82.108.220&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;8238&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;173.225.101.9&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;5383&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;212.102.33.140&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;4660&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;159.242.234.200&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;4312&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;177.129.160.109&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Brazil&lt;/td&gt;
-        &lt;td&gt;4135&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;5.62.24.33&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;4114&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;20.198.115.140&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;3518&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;51.39.226.226&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;3128&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;197.45.213.88&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Egypt&lt;/td&gt;
-        &lt;td&gt;3114&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;p&gt;Demo-miljø nede :(&lt;/p&gt;
 &lt;h3 id=&#34;feilet-pålogging-via-rdp---upn&#34;&gt;Feilet pålogging via RDP - UPN&lt;/h3&gt;
 &lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/p&gt;
-
-
-
-
-
-&lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-      &lt;th&gt;Kontonavn&lt;/th&gt;
-      &lt;th&gt;Antall påloggings forsøk&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        
-        
-        
-            
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;129015&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;53848&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;22151&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;ADMINTN2019\Administrator&lt;/td&gt;
-        &lt;td&gt;10925&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;9724&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;9267&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\USER&lt;/td&gt;
-        &lt;td&gt;6869&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\AZUREUSER&lt;/td&gt;
-        &lt;td&gt;2711&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\LOCALADMIN&lt;/td&gt;
-        &lt;td&gt;2069&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\VMADMIN&lt;/td&gt;
-        &lt;td&gt;2048&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\AZUREADMIN&lt;/td&gt;
-        &lt;td&gt;2045&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\SYSADMIN&lt;/td&gt;
-        &lt;td&gt;1728&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\CAJA1&lt;/td&gt;
-        &lt;td&gt;1716&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\SERVERADMIN&lt;/td&gt;
-        &lt;td&gt;1683&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME\Administrator&lt;/td&gt;
-        &lt;td&gt;1376&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;p&gt;Demo-miljø nede :(&lt;/p&gt;
 &lt;h3 id=&#34;trafikk-port---land&#34;&gt;Trafikk port - Land&lt;/h3&gt;
 &lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/p&gt;
-
-
-
-
-
-&lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-      &lt;th&gt;Port&lt;/th&gt;
-      &lt;th&gt;Land&lt;/th&gt;
-      &lt;th&gt;Antall&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        
-        
-        
-            
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;22759&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Denmark&lt;/td&gt;
-        &lt;td&gt;8876&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Germany&lt;/td&gt;
-        &lt;td&gt;8683&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Netherlands&lt;/td&gt;
-        &lt;td&gt;8618&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;6479&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Brazil&lt;/td&gt;
-        &lt;td&gt;3791&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;2798&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;2608&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Chile&lt;/td&gt;
-        &lt;td&gt;2024&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;1981&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;p&gt;Demo-miljø nede :(&lt;/p&gt;
 </description> 
     </item>
     
