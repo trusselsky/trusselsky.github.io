@@ -37,15 +37,15 @@ Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet m�
 ### Feilet pålogging via RDP - Land ###
 Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt. Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser. 
 
-Demo-miljø nede :(
+{{< table "" >}}
 
 ### Feilet pålogging via RDP - UPN ###
 Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).
 
-Demo-miljø nede :(
+{{< tableaccount "" >}}
 
 
 ### Trafikk port - Land ###
 Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).
 
-Demo-miljø nede :(
+{{< tableprocess "" >}}
