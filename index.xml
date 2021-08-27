@@ -184,13 +184,394 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;feilet-pålogging-via-rdp---land&#34;&gt;Feilet pålogging via RDP - Land&lt;/h3&gt;
 &lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på spesifikk EventID og hvilken IP addresser som er oftest brukt. Denne viser blant annet påloggingsforsøk via RDP og er filtrert etter topp 15 IP-addresser.&lt;/p&gt;
-&lt;p&gt;Demo-miljø nede :(&lt;/p&gt;
+
+
+
+
+
+
+&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+      &lt;th&gt;IP Addresse&lt;/th&gt;
+      &lt;th&gt;Event ID&lt;/th&gt;
+      &lt;th&gt;Land&lt;/th&gt;
+      &lt;th&gt;Antall påloggings forsøk&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        
+        
+        
+            
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;5.9.153.71&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Germany&lt;/td&gt;
+        &lt;td&gt;64611&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;162.55.232.176&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;28705&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;51.13.78.215&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;22014&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;125.227.51.202&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Taiwan&lt;/td&gt;
+        &lt;td&gt;4041&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;51.211.168.47&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;3109&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;27.71.120.165&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Vietnam&lt;/td&gt;
+        &lt;td&gt;3106&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;79.130.41.189&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Greece&lt;/td&gt;
+        &lt;td&gt;3106&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;80.26.236.134&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Spain&lt;/td&gt;
+        &lt;td&gt;3105&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;31.121.124.234&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;3104&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;77.135.185.209&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;France&lt;/td&gt;
+        &lt;td&gt;3104&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;177.8.161.106&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Brazil&lt;/td&gt;
+        &lt;td&gt;3104&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;81.5.111.249&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;3101&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;193.227.35.212&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Egypt&lt;/td&gt;
+        &lt;td&gt;3101&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;212.3.142.58&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;3101&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;117.202.207.200&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;India&lt;/td&gt;
+        &lt;td&gt;3101&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+    &lt;/tbody&gt;
+  &lt;/table&gt;
 &lt;h3 id=&#34;feilet-pålogging-via-rdp---upn&#34;&gt;Feilet pålogging via RDP - UPN&lt;/h3&gt;
 &lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/p&gt;
-&lt;p&gt;Demo-miljø nede :(&lt;/p&gt;
+
+
+
+
+
+&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+      &lt;th&gt;Kontonavn&lt;/th&gt;
+      &lt;th&gt;Antall påloggings forsøk&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        
+        
+        
+            
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\administrator&lt;/td&gt;
+        &lt;td&gt;62299&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
+        &lt;td&gt;20476&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\ADMIN&lt;/td&gt;
+        &lt;td&gt;10072&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\USER&lt;/td&gt;
+        &lt;td&gt;9822&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\SERVER&lt;/td&gt;
+        &lt;td&gt;9707&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\TEST&lt;/td&gt;
+        &lt;td&gt;9161&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\REMOTE&lt;/td&gt;
+        &lt;td&gt;7334&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\SUPPORT&lt;/td&gt;
+        &lt;td&gt;7151&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\Administrator&lt;/td&gt;
+        &lt;td&gt;3890&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
+        &lt;td&gt;3248&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME01\administrateur&lt;/td&gt;
+        &lt;td&gt;2073&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME01\administrator&lt;/td&gt;
+        &lt;td&gt;2073&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME01\assistante&lt;/td&gt;
+        &lt;td&gt;1971&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\ADMINISTRADOR&lt;/td&gt;
+        &lt;td&gt;1965&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\YONETIM&lt;/td&gt;
+        &lt;td&gt;1965&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+    &lt;/tbody&gt;
+  &lt;/table&gt;
 &lt;h3 id=&#34;trafikk-port---land&#34;&gt;Trafikk port - Land&lt;/h3&gt;
 &lt;p&gt;Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert på mest brukte kontonavn (UPN).&lt;/p&gt;
-&lt;p&gt;Demo-miljø nede :(&lt;/p&gt;
+
+
+
+
+
+&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+      &lt;th&gt;Port&lt;/th&gt;
+      &lt;th&gt;Land&lt;/th&gt;
+      &lt;th&gt;Antall&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        
+        
+        
+            
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Turkey&lt;/td&gt;
+        &lt;td&gt;3587&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Germany&lt;/td&gt;
+        &lt;td&gt;1896&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;1277&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Netherlands&lt;/td&gt;
+        &lt;td&gt;1180&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Taiwan&lt;/td&gt;
+        &lt;td&gt;1011&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Belarus&lt;/td&gt;
+        &lt;td&gt;1002&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;United Kingdom&lt;/td&gt;
+        &lt;td&gt;585&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Slovakia&lt;/td&gt;
+        &lt;td&gt;314&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Islamic Republic of Pakistan&lt;/td&gt;
+        &lt;td&gt;282&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;170&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+    &lt;/tbody&gt;
+  &lt;/table&gt;
 </description> 
     </item>
     
