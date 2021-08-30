@@ -30,7 +30,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet måler eller kjente IP addresser som blir brukt for ondsinnet formål.<br/>  Data kommer fra vårt Azure miljø å blir oppdatert ved neste datainnsamling. (Historiske data viser de siste 30 dagene) (Oppdatert 17. August) 
+Denne viser ulikk statistikk fra honeypot miljøet vårt. Hvor vi blant annet måler eller kjente IP addresser som blir brukt for ondsinnet formål.<br/>  Data kommer fra vårt Azure miljø å blir oppdatert ved neste datainnsamling. (Historiske data viser de siste 30 dagene) (Oppdatert 30. August) data er samlet inn fra ulike virtuelle maskiner som kjører i Microsoft Azure. 
 
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/trusselsky/trusselsky.github.io/commits/)
 
