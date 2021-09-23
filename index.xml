@@ -5,7 +5,7 @@
     <link>https://trusselsky.github.io/</link>
     <description>Recent content on Trusselsky</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 18 Sep 2021 23:38:06 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 21 Sep 2021 23:28:51 +0200</lastBuildDate>
     
 	<atom:link href="https://trusselsky.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -79,6 +79,112 @@ F.eks at de ikke får informasjon om at det er en sårbarhet knyttet til et spes
 &lt;h3 id=&#34;hvordan-kan-jeg-bidra&#34;&gt;Hvordan kan jeg bidra?&lt;/h3&gt;
 &lt;p&gt;Om det er mer informasjon knyttet til enkelt innlegg eller artikler så stikk gjerne over til Github å kom med tilbakemeldinger eller marker det som &amp;ldquo;Issues&amp;rdquo;
 Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;, jeg biter ikke..&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
+      <title>Hvordan komme til en passordløs hverdag?</title>
+      <link>https://trusselsky.github.io/posts/kommeigangmedpassordl%C3%B8s/</link>
+      <pubDate>Tue, 21 Sep 2021 23:28:51 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/posts/kommeigangmedpassordl%C3%B8s/</guid>
+      <description>&lt;p&gt;Microsoft lanserte nylig at man kunne begynne å logge inn mot Microsoft-kontoen uten passord men heller benytte seg av Microsoft authenticator appen (eller andre mekanismer som f.eks fysiske adgangsnøkler) for innlogging.&lt;/p&gt;
+&lt;p&gt;Funksjonen er ikke ny, men har primært vært tilgjenglig for bedriftsmarkedet frem til nå. Alikevel er det ikke mange som har benyttet seg av funksjonaliteten, derfor ønsket vi å belyse litt hvordan tjenesten fungerer. Litt om hva som behøves, hva som er supportert og hvorfor det er sikrere en vanlig brukernavn og passord. Samt litt om økosystemet rundt å hvem som supporterer denne autentiseringsmekanismen.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/passordl%c3%b8s1.png&#34; alt=&#34;FIDO2&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;fido2&#34;&gt;FIDO2&lt;/h2&gt;
+&lt;p&gt;FIDO (Fast IDentity Online) alliasen er en rekke organisasjoner som samarbeider ved å utvikle en sikrere og enklere måter å autentisere på. Denne gruppen kom med FIDO2 standarden som var et utvidelse av det eksisterende rammeverket som de hadde laget men skulle tilby sikker autentisering basert på passordløs autentisering både for mobile og vanlige arbeidsstasjoner.&lt;/p&gt;
+&lt;p&gt;FIDO2 Består av to standard hoved komponenter&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Et Web API (WebAuthn)&lt;/li&gt;
+&lt;li&gt;Client Authentication Protocol (CTAP)
+CTAP definerer protokollen for en ekstern sikkerhetsnøkkel og snakker med en klientenhet. Begge disse er tett ingrert å leverer med det en passordløs pålogging mekanisme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/fido1.png&#34; alt=&#34;FIDO2&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;For å kunne benytte seg av FIDO2 standarden er man avhengig av å ha støtte for WebAuth og CTAP protokollen på underliggende systemer som f.eks identitetstjenesten, nettleseren og ikke minst operativsystemet for å kunne håndtere autentiseringsmekanismen. Så hvem støtter FIDO2 standarden?&lt;/p&gt;
+&lt;p&gt;De fleste moderne nettlesere støtter FIDO2 standarden mot Azure Active Directory med ulike CTAP støtte som USB, NFC eller Bluetooth (BLE)&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/browserfido.png&#34; alt=&#34;browserfido&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;I tillegg må man ha FIDO2 godkjente sikkerhetsnøkler fra en supportert leverandør. Som disse leverandørene her som tilbyr en rekke sikkerhetsnøkler som kommer med ulike funksjonalitet som f.eks Yubiko som leverer USB/NFC nøkler med touch-basert autentisering. Men de fleste leverandørene har ulike alternativer basert på ulik USB(A/C) format&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Feitian&lt;/li&gt;
+&lt;li&gt;Kensington&lt;/li&gt;
+&lt;li&gt;Thales&lt;/li&gt;
+&lt;li&gt;Thetis&lt;/li&gt;
+&lt;li&gt;Token2 Switzerland&lt;/li&gt;
+&lt;li&gt;TrustKey Solutions&lt;/li&gt;
+&lt;li&gt;Yubico&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hva-støtter-fido2&#34;&gt;Hva støtter FIDO2?&lt;/h2&gt;
+&lt;p&gt;Men hvilken identitetstjenester støtter FIDO2? (Ikke en helt fullstendig liste)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Identity&lt;/li&gt;
+&lt;li&gt;Azure Active Directory (omfatter og Office 365)&lt;/li&gt;
+&lt;li&gt;Okta&lt;/li&gt;
+&lt;li&gt;Github&lt;/li&gt;
+&lt;li&gt;Buypass ID &amp;amp; Authentication tjenesten (&lt;a href=&#34;https://buypassdev.atlassian.net/wiki/spaces/BFIS/overview&#34;&gt;https://buypassdev.atlassian.net/wiki/spaces/BFIS/overview&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;PingIdentity&lt;/li&gt;
+&lt;li&gt;Sosial medier som (Facebook/Twitter)&lt;/li&gt;
+&lt;li&gt;Passordtjenester som (1Password, LastPass f.eks)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Det finnes også en fullstendig liste som spesielt Yubikey støtter her &amp;ndash;&amp;gt; &lt;a href=&#34;https://www.yubico.com/no/works-with-yubikey/catalog/?sort=popular&#34;&gt;https://www.yubico.com/no/works-with-yubikey/catalog/?sort=popular&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Selv om ikke alle applikasjoner har innebygget støtte for WebAuth så vil det fungere om applikasjoner og tjenester man benytter seg av er integert mot en av disse identitetstjenestene over som (f.eks AzureAD), betyr det at man kan benytte seg av f.eks passordløs autentisering mot disse tjenestene.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/webauthflow.png&#34; alt=&#34;webauth&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Fra en sluttbruker perspektiv som skal autentisere mot en angitt tjeneste, vil arbeidsflyten være slik.(NB WebAuth er et javascript biblotek som kjører i nettleseren)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0: Bruker går mot angitt applikasjon som krever autentisering, går tilbake til iDP.&lt;/li&gt;
+&lt;li&gt;1: Relay party (som er en komponent hos iDPen) sender&lt;/li&gt;
+&lt;li&gt;2: Nettleseren sender en authenticatorMakeCredential() som inneholder til authenticator (via CTAP) tjenesten å be brukeren legge inn enten pinkode eller touch&lt;/li&gt;
+&lt;li&gt;3: Brukeren verifiserer autentiseringen tilbake til CTAP.&lt;/li&gt;
+&lt;li&gt;4: CTAP returnerer data tilbake til nettleseren med en ny credential ID og annen informasjon&lt;/li&gt;
+&lt;li&gt;5: Nettleseren sender data tilbake til server (Relay party hos iDPen)&lt;/li&gt;
+&lt;li&gt;6: Server godkjenner forespørselen å sender tilbake et access token fra iDPen som gir SSO.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hvordan-sette-opp-en-passordløs-løsning-med-yubikey&#34;&gt;Hvordan sette opp en passordløs løsning med Yubikey?&lt;/h2&gt;
+&lt;p&gt;Oppskriften her er å sette opp dette mot Azure Active Directory. Hvor det første steget er å aktivere FIDO2 som en påloggingsmekanisme i Azure AD. Dette gjøres under Azure AD Properties &amp;ndash;&amp;gt; Security &amp;ndash;&amp;gt; Authentication Methods. Deretter må FODI2 aktiveres.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/azuread1.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Når dette er gjort, men per bruker aktivere nøkkelen for sin bruker. Dette kan gjøres via myapps.microsoft.com å under Security og Sign-ins velge Security information og velge &amp;ldquo;Add Method&amp;rdquo;. Under der vil man ha valg om å legge til Security Key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/azuread2.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;å deretter velge hva slags type nøkkel man har. I eksempelt her har jeg en Yubikey v4 som kun er støtte via USB.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/azuread3.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Når man velger nøkkeltype, vil iDP tjenesten trigger autentiseringsflyten via WebAuthn som vil kjøre registrering av nøkkelen. Så vil man se en typisk bilde som dette for å registrere nøkkelen sin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/azuread4.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Når dette er gjort, vil man også avhengig av type nøkkel fullføre en autentiseringsprosess enten ved å legge inn pinkode eller touch basert autentisering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/azuread5.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Når dette er gjort vil man via Azure AD login som dekker O365 og andre tjenester ha &amp;ldquo;Sign in with a Security Key&amp;rdquo; som opsjon. Pinkode i tilfelle ved logging vil være andre faktoren som oppfyller kravene til MFA.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/azuread6.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Det skal også sies at samme autenseringsmekanisme er også tilgjengelig direkte mot Windows. Som krever at Windows Hello For Business er aktivert.
+I prinsippet så har Microsoft integert CTAP komponenten inn i sitt operativsystem for å få til dette. Om klienten også er en del av Azure AD vil man også kunne få SSO fra Windows login ut til alle tjenester som er integrert mot iDP tjenesten.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/windows10.png&#34; alt=&#34;azuread1&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;hensyn-man-må-ta-om-man-setter-dette-opp-for-windows-infrastruktur&#34;&gt;Hensyn man må ta om man setter dette opp for Windows infrastruktur&lt;/h2&gt;
+&lt;p&gt;Så langt har vi beskrevet oppsettet inn mot en skybasert identitestjeneste, kan dette også virke mot mer tradisjonelle tjenester som Active Directory?
+Det er også supportert men krever noe modifikasjoner mot Active Directory som beskrives her &amp;ndash;&amp;gt; &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises&#34;&gt;https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises&lt;/a&gt; (men merk det krever fortsatt at man har identitet synkronisert ut mot Azure Active Directory)&lt;/p&gt;
+&lt;p&gt;Men det er viktig å påpeke at denne tjenester er ikke supportert mot alle protokoller som f.eks RDP eller &amp;ldquo;Run-as&amp;rdquo; eller pålogging mot servere via WMI/PowerShell.&lt;/p&gt;
+&lt;h2 id=&#34;er-vi-tryggere-nå&#34;&gt;Er vi tryggere nå?&lt;/h2&gt;
+&lt;p&gt;Er man tryggere når en bruker ikke lengre vet sitt eget passord? Om en bruker ikke lengre har tilgang til sitt eget passord betyr det også at man ikke kan oppgi denne type informasjon som også gjør at man blir mindre sårbar for brukerinformasjon som er på avveie. Alikevel vil ikke f.eks implementering av slike løsniger forhindre at brukernavn og passord kan komme på avveie alikevel. Selv om brukeren bruker en FIDO2 basert nøkkel for passordløs autensering så sitter fortsatt passordet lagret hos identitetstjenesten. Eneste måten man da kan forhindre det på er om idenditetsleverandøren tar bort passordet helt fra løsningen, slik som Microsoft har gjort som mulighet for Microsoft online kontoer.&lt;/p&gt;
+&lt;p&gt;Samtidig har man også mulighet til å definere sikkerhetsregler som krever f.eks at om man skal kunne logge inn så må man ha nøkkelen for å gjennomføre MFA autentiseringen.&lt;/p&gt;
+&lt;p&gt;Om den også skal ha ønsket effektv ved å eliminere passord, må man også se på resten av økosystemet. Hva slags tjenester er det som brukeren har behov/tilgang til som krever passord? mobilen? print systemet? adgangskontroll? Det er selvsagt viktig å vurdere hvordan og hvilken type løsning som passer til det økosystemet man har for å kunne få til en sømløs opplevelse for brukerene.&lt;/p&gt;
 </description> 
     </item>
     
@@ -317,7 +423,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         &lt;td&gt;116.202.91.138&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;94313&lt;/td&gt;
+        &lt;td&gt;67590&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -326,7 +432,34 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         &lt;td&gt;162.55.244.54&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;41229&lt;/td&gt;
+        &lt;td&gt;43033&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;91.220.163.130&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Ukraine&lt;/td&gt;
+        &lt;td&gt;17753&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;66.45.255.66&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;17319&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;91.191.209.134&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Bulgaria&lt;/td&gt;
+        &lt;td&gt;16764&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -350,9 +483,27 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
-        &lt;td&gt;61.220.191.194&lt;/td&gt;
+        &lt;td&gt;47.97.211.103&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Taiwan&lt;/td&gt;
+        &lt;td&gt;China&lt;/td&gt;
+        &lt;td&gt;11007&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;202.70.89.51&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Nepal&lt;/td&gt;
+        &lt;td&gt;11007&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;213.172.88.12&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Azerbaijan&lt;/td&gt;
         &lt;td&gt;11005&lt;/td&gt;
       &lt;/tr&gt;
       
@@ -368,9 +519,9 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
-        &lt;td&gt;218.255.233.35&lt;/td&gt;
+        &lt;td&gt;5.189.175.153&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Hong Kong&lt;/td&gt;
+        &lt;td&gt;Germany&lt;/td&gt;
         &lt;td&gt;11004&lt;/td&gt;
       &lt;/tr&gt;
       
@@ -386,24 +537,6 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
-        &lt;td&gt;103.42.57.240&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;11001&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;119.252.172.58&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Indonesia&lt;/td&gt;
-        &lt;td&gt;10992&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
         &lt;td&gt;40.80.93.165&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
@@ -413,37 +546,10 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
-        &lt;td&gt;49.176.223.176&lt;/td&gt;
+        &lt;td&gt;195.201.161.73&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Australia&lt;/td&gt;
-        &lt;td&gt;10128&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.191.209.134&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Bulgaria&lt;/td&gt;
-        &lt;td&gt;9578&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;51.223.167.49&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;6211&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;212.102.34.250&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;4324&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;8672&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -472,105 +578,105 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;347645&lt;/td&gt;
+        &lt;td&gt;308288&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;135679&lt;/td&gt;
+        &lt;td&gt;155211&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;31075&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;24451&lt;/td&gt;
+        &lt;td&gt;37146&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;13859&lt;/td&gt;
+        &lt;td&gt;25799&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\Administrator&lt;/td&gt;
+        &lt;td&gt;23409&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Admin&lt;/td&gt;
-        &lt;td&gt;12220&lt;/td&gt;
+        &lt;td&gt;18001&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Administrador&lt;/td&gt;
-        &lt;td&gt;11847&lt;/td&gt;
+        &lt;td&gt;17765&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;HACKME01\Administrateur&lt;/td&gt;
-        &lt;td&gt;11498&lt;/td&gt;
+        &lt;td&gt;17575&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;Hackme01\Admin&lt;/td&gt;
-        &lt;td&gt;5415&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Administrador&lt;/td&gt;
-        &lt;td&gt;5390&lt;/td&gt;
+        &lt;td&gt;\USER&lt;/td&gt;
+        &lt;td&gt;8015&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;Hackme01\Administrator&lt;/td&gt;
-        &lt;td&gt;5388&lt;/td&gt;
+        &lt;td&gt;7582&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;Hackme01\Admin&lt;/td&gt;
+        &lt;td&gt;7576&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;Hackme01\Administrateur&lt;/td&gt;
-        &lt;td&gt;5388&lt;/td&gt;
+        &lt;td&gt;6988&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\Admin&lt;/td&gt;
-        &lt;td&gt;2824&lt;/td&gt;
+        &lt;td&gt;Hackme01\Administrador&lt;/td&gt;
+        &lt;td&gt;6988&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\Admins&lt;/td&gt;
-        &lt;td&gt;2533&lt;/td&gt;
+        &lt;td&gt;\TEST&lt;/td&gt;
+        &lt;td&gt;3638&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\Administrador&lt;/td&gt;
-        &lt;td&gt;2038&lt;/td&gt;
+        &lt;td&gt;\TEMP&lt;/td&gt;
+        &lt;td&gt;3201&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -601,7 +707,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;22485&lt;/td&gt;
+        &lt;td&gt;35999&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -609,7 +715,39 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Germany&lt;/td&gt;
-        &lt;td&gt;18151&lt;/td&gt;
+        &lt;td&gt;17633&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Spain&lt;/td&gt;
+        &lt;td&gt;8077&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Lithuania&lt;/td&gt;
+        &lt;td&gt;5294&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Moldova&lt;/td&gt;
+        &lt;td&gt;4845&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;4723&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -617,7 +755,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Netherlands&lt;/td&gt;
-        &lt;td&gt;6134&lt;/td&gt;
+        &lt;td&gt;4426&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -625,23 +763,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;3733&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Singapore&lt;/td&gt;
-        &lt;td&gt;3430&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Australia&lt;/td&gt;
-        &lt;td&gt;2821&lt;/td&gt;
+        &lt;td&gt;3692&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -649,31 +771,15 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Korea&lt;/td&gt;
-        &lt;td&gt;1912&lt;/td&gt;
+        &lt;td&gt;2977&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Chile&lt;/td&gt;
-        &lt;td&gt;1774&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;1757&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;1690&lt;/td&gt;
+        &lt;td&gt;Australia&lt;/td&gt;
+        &lt;td&gt;2820&lt;/td&gt;
       &lt;/tr&gt;
       
     
