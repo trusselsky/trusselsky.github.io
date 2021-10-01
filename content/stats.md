@@ -50,3 +50,8 @@ Tabellen under viser påloggingsforsøk mot Windows Honeypot miljøet, basert p�
 
 {{< tableprocess "" >}}
 
+### App Registration ###
+
+{{< appreg "" >}}
+
+

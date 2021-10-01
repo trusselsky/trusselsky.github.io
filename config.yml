@@ -80,6 +80,8 @@ params:
               url: artikler
             - name: Stats
               url: stats
+            - name: Sikkerhetsmåneden
+              url: secokt
 
 
     # home-info mode
