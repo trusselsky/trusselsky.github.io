@@ -83,6 +83,31 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
     </item>
     
     <item>
+      <title>Sikkerhetsmåneden Oktober</title>
+      <link>https://trusselsky.github.io/secokt/</link>
+      <pubDate>Fri, 01 Oct 2021 10:12:31 +0200</pubDate>
+      
+      <guid>https://trusselsky.github.io/secokt/</guid>
+      <description>&lt;p&gt;Her kommer vi løpende med korte tips og tricks man kan gjøre for å øke sin sikkerhetshygiene. Målet er å komme med nye tips hver dag i hele Oktober!&lt;/p&gt;
+&lt;h2 id=&#34;1-oktober&#34;&gt;1 Oktober&lt;/h2&gt;
+&lt;p&gt;En ting vi har sett mye av de siste årene har vært sårbarheter tilknyttet nettleseren. Dette er litt fordi at nettleseren er kontinuerlig under utvikling, nye web standarder som skal supporteres, nye funksjonalitet med add-ons og ikke minst skal bli tettere integrert med det underliggende operativsystemet for å kunne understøtte nye tjenester som WebRTC, WebGL, QUIC/HTTP3.&lt;/p&gt;
+&lt;p&gt;Nettleseren er også mye av hovedverktøyet til alle ansatte å må derfor viktig angrepsflate som må beskyttes. Så langt i år har Google Chrome hatt 13 (0-dags) sårbarheter med noen av disse har også blitt utnyttet for å gjennomføre angrep. Vi har også sett eksempler på hvor extensions som har hatt over 20 millioner brukere som har blitt brukt for innsamling av informasjon eller videresende brukere til phising nettsider. Så det er veldig viktig å ha kontroll på nettleseren i forhold til å ha oppdateringer automatisk samt kontroll på addons samt noen andre justeringer.&lt;/p&gt;
+&lt;p&gt;For Administrerte klienter kan dette styres via Group Policy som kan lastes ned her &amp;ndash;&amp;gt; &lt;a href=&#34;https://enterprise.google.com/chrome/chrome-browser/#download&#34;&gt;https://enterprise.google.com/chrome/chrome-browser/#download&lt;/a&gt; samt det finnes en egen Group Policy for styring av oppdateringer (&lt;a href=&#34;https://dl.google.com/update2/enterprise/googleupdateadmx.zip&#34;&gt;https://dl.google.com/update2/enterprise/googleupdateadmx.zip&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Her er det en rekke innstillinger man bør definere&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Chrome &amp;ndash;&amp;gt; Extensions &amp;ndash;&amp;gt; Blocks external extensions from being installed&lt;/li&gt;
+&lt;li&gt;Google Chrome &amp;ndash;&amp;gt; Extensions &amp;ndash;&amp;gt; Configure extension installation blocklist (med verdi *) dette forhindrer at extensions blir innstallert med mindre de ligger i allow listen.&lt;/li&gt;
+&lt;li&gt;Google Chrome &amp;ndash;&amp;gt; Set the time peroid for update notifications &amp;ndash;&amp;gt; Når brukere får beskjed om at Chrome må restarte pga oppdateringer vil verdien man definere her gjør at Chrome blir automatisk restartet.&lt;/li&gt;
+&lt;li&gt;Google Chrome &amp;ndash;&amp;gt; Notify a user that a browser relaunch or device restart is recommended or required &amp;ndash;&amp;gt; Show a recurring prompt to the user indicating that a restart is required.&lt;/li&gt;
+&lt;li&gt;Google &amp;ndash;&amp;gt; Google Update &amp;ndash;&amp;gt; Applications. Always Allow Updates (recommended)&lt;/li&gt;
+&lt;li&gt;Google &amp;ndash;&amp;gt; Google Update &amp;ndash;&amp;gt; Application &amp;ndash;&amp;gt; Google Chrome. Always Allow Updates (recommended)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-oktober&#34;&gt;2 Oktober&lt;/h2&gt;
+&lt;p&gt;Har du noen tips til andre innstilliger man bør ha med? gi oss beskjed! &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;&lt;/p&gt;
+</description> 
+    </item>
+    
+    <item>
       <title>Hvordan komme til en passordløs hverdag?</title>
       <link>https://trusselsky.github.io/posts/kommeigangmedpassordl%C3%B8s/</link>
       <pubDate>Tue, 21 Sep 2021 23:28:51 +0200</pubDate>
@@ -420,28 +445,28 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
     
             
              &lt;tr&gt;
+        &lt;td&gt;82.212.109.79&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Hashemite Kingdom of Jordan&lt;/td&gt;
+        &lt;td&gt;11004&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
         &lt;td&gt;116.202.91.138&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;67590&lt;/td&gt;
+        &lt;td&gt;4351&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;162.55.244.54&lt;/td&gt;
+        &lt;td&gt;95.52.245.65&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;43033&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.220.163.130&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Ukraine&lt;/td&gt;
-        &lt;td&gt;17753&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;3102&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -450,7 +475,16 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         &lt;td&gt;66.45.255.66&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;17319&lt;/td&gt;
+        &lt;td&gt;2378&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;91.241.19.240&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;1924&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -459,79 +493,25 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         &lt;td&gt;91.191.209.134&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;Bulgaria&lt;/td&gt;
-        &lt;td&gt;16764&lt;/td&gt;
+        &lt;td&gt;1628&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;144.123.105.14&lt;/td&gt;
+        &lt;td&gt;41.191.216.137&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;11013&lt;/td&gt;
+        &lt;td&gt;Botswana&lt;/td&gt;
+        &lt;td&gt;992&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;113.161.163.247&lt;/td&gt;
+        &lt;td&gt;154.16.169.58&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;11008&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;47.97.211.103&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;11007&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;202.70.89.51&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Nepal&lt;/td&gt;
-        &lt;td&gt;11007&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;213.172.88.12&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Azerbaijan&lt;/td&gt;
-        &lt;td&gt;11005&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;51.38.214.191&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-        &lt;td&gt;11004&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;5.189.175.153&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Germany&lt;/td&gt;
-        &lt;td&gt;11004&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;113.88.161.229&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;China&lt;/td&gt;
-        &lt;td&gt;11002&lt;/td&gt;
+        &lt;td&gt;United States&lt;/td&gt;
+        &lt;td&gt;699&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -540,16 +520,61 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         &lt;td&gt;40.80.93.165&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;10306&lt;/td&gt;
+        &lt;td&gt;686&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;195.201.161.73&lt;/td&gt;
+        &lt;td&gt;113.160.182.66&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Vietnam&lt;/td&gt;
+        &lt;td&gt;632&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;92.58.80.38&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Spain&lt;/td&gt;
+        &lt;td&gt;478&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;78.63.76.65&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Republic of Lithuania&lt;/td&gt;
+        &lt;td&gt;461&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;58.225.57.229&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Republic of Korea&lt;/td&gt;
+        &lt;td&gt;410&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;94.232.43.67&lt;/td&gt;
         &lt;td&gt;4625&lt;/td&gt;
         &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;8672&lt;/td&gt;
+        &lt;td&gt;376&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;93.115.136.56&lt;/td&gt;
+        &lt;td&gt;4625&lt;/td&gt;
+        &lt;td&gt;Republic of Moldova&lt;/td&gt;
+        &lt;td&gt;360&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -578,105 +603,105 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
             
              &lt;tr&gt;
         &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;308288&lt;/td&gt;
+        &lt;td&gt;17280&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;155211&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;37146&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;25799&lt;/td&gt;
+        &lt;td&gt;10276&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;23409&lt;/td&gt;
+        &lt;td&gt;1418&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;HACKME01\Admin&lt;/td&gt;
-        &lt;td&gt;18001&lt;/td&gt;
+        &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
+        &lt;td&gt;1156&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;HACKME01\Administrador&lt;/td&gt;
-        &lt;td&gt;17765&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME01\Administrateur&lt;/td&gt;
-        &lt;td&gt;17575&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\USER&lt;/td&gt;
-        &lt;td&gt;8015&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Administrator&lt;/td&gt;
-        &lt;td&gt;7582&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Admin&lt;/td&gt;
-        &lt;td&gt;7576&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Administrateur&lt;/td&gt;
-        &lt;td&gt;6988&lt;/td&gt;
+        &lt;td&gt;\ADMIN&lt;/td&gt;
+        &lt;td&gt;652&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;Hackme01\Administrador&lt;/td&gt;
-        &lt;td&gt;6988&lt;/td&gt;
+        &lt;td&gt;600&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\TEST&lt;/td&gt;
-        &lt;td&gt;3638&lt;/td&gt;
+        &lt;td&gt;Hackme01\Administrateur&lt;/td&gt;
+        &lt;td&gt;599&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
-        &lt;td&gt;\TEMP&lt;/td&gt;
-        &lt;td&gt;3201&lt;/td&gt;
+        &lt;td&gt;HACKME\Amministratore&lt;/td&gt;
+        &lt;td&gt;483&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME\Administrador&lt;/td&gt;
+        &lt;td&gt;482&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME\Administrateur&lt;/td&gt;
+        &lt;td&gt;481&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;HACKME\Administrator&lt;/td&gt;
+        &lt;td&gt;478&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;Hackme01\Admin&lt;/td&gt;
+        &lt;td&gt;254&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\admin&lt;/td&gt;
+        &lt;td&gt;221&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\Admin&lt;/td&gt;
+        &lt;td&gt;158&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;\hp&lt;/td&gt;
+        &lt;td&gt;158&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -707,15 +732,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;35999&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Germany&lt;/td&gt;
-        &lt;td&gt;17633&lt;/td&gt;
+        &lt;td&gt;1758&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -723,47 +740,7 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Spain&lt;/td&gt;
-        &lt;td&gt;8077&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Lithuania&lt;/td&gt;
-        &lt;td&gt;5294&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Moldova&lt;/td&gt;
-        &lt;td&gt;4845&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;4723&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Netherlands&lt;/td&gt;
-        &lt;td&gt;4426&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;3692&lt;/td&gt;
+        &lt;td&gt;669&lt;/td&gt;
       &lt;/tr&gt;
       
     
@@ -771,15 +748,221 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
         &lt;td&gt;Korea&lt;/td&gt;
-        &lt;td&gt;2977&lt;/td&gt;
+        &lt;td&gt;476&lt;/td&gt;
       &lt;/tr&gt;
       
     
             
              &lt;tr&gt;
         &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Australia&lt;/td&gt;
-        &lt;td&gt;2820&lt;/td&gt;
+        &lt;td&gt;Russia&lt;/td&gt;
+        &lt;td&gt;432&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Lithuania&lt;/td&gt;
+        &lt;td&gt;374&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Germany&lt;/td&gt;
+        &lt;td&gt;374&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Moldova&lt;/td&gt;
+        &lt;td&gt;369&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;India&lt;/td&gt;
+        &lt;td&gt;320&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Canada&lt;/td&gt;
+        &lt;td&gt;246&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;3389&lt;/td&gt;
+        &lt;td&gt;Italy&lt;/td&gt;
+        &lt;td&gt;211&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;h3 id=&#34;app-registration&#34;&gt;App Registration&lt;/h3&gt;
+
+
+
+
+
+&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+      &lt;th&gt;ExpiryDate&lt;/th&gt;
+      &lt;th&gt;DisplayName&lt;/th&gt;
+      &lt;th&gt;Owners&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        
+        
+        
+            
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;11/3/2018 6:05:44 PM&lt;/td&gt;
+        &lt;td&gt;VMware2&lt;/td&gt;
+        &lt;td&gt;b13a094e-4465-4794-b484-0afad7d07c99&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;12/30/2299 11:00:00 PM&lt;/td&gt;
+        &lt;td&gt;Cloudcheckr&lt;/td&gt;
+        &lt;td&gt;223e8559-3b7b-44df-b2a3-018209b1fd7f&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;7/17/2018 6:50:00 AM&lt;/td&gt;
+        &lt;td&gt;CitrixAccess&lt;/td&gt;
+        &lt;td&gt;a2b35350-2b21-4cdb-8007-61828a584dc7&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;8/16/2023 5:21:30 PM&lt;/td&gt;
+        &lt;td&gt;dsc365&lt;/td&gt;
+        &lt;td&gt;3af2ed22-3b26-4fd1-893e-582630d7af6b&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;2/18/2022 5:00:49 PM&lt;/td&gt;
+        &lt;td&gt;sptf-msandbuorg&lt;/td&gt;
+        &lt;td&gt;40cb3236-0ca3-404e-8107-4727e9d77008&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;9/1/2022 12:00:00 AM&lt;/td&gt;
+        &lt;td&gt;aakjhkjhkj_6D&amp;#43;nt/2Vp9k/F23&amp;#43;/Aoz2/ETWXNwMlLraXqeaSMaXMY=&lt;/td&gt;
+        &lt;td&gt;759210e9-f383-4b4b-89fa-2e481a1bf589&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;12/30/2299 11:00:00 PM&lt;/td&gt;
+        &lt;td&gt;NetScaler Gateway&lt;/td&gt;
+        &lt;td&gt;f35d1daf-5497-4f29-9df0-4eb023b96a1c&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;11/14/2017 12:00:00 AM&lt;/td&gt;
+        &lt;td&gt;automation_jfzMf1TOC/jxZhmoNQ/JZRUlOzj3cRDS1K&amp;#43;oruydAUg=&lt;/td&gt;
+        &lt;td&gt;a3595bdf-a885-40b4-b396-10072e8e344d&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;12/30/2299 11:00:00 PM&lt;/td&gt;
+        &lt;td&gt;scom&lt;/td&gt;
+        &lt;td&gt;380af21e-f532-4e87-9f28-3eb70532370b&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;11/3/2018 6:04:01 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;8b7d0369-9504-46ec-bc11-30c84a9c5318&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;10/24/2018 7:29:30 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;880741cb-7914-429d-bbe8-a1739334b3fd&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;10/23/2018 9:40:08 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;99eb11e2-7c6a-4410-a512-4ff21b504c78&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;10/23/2018 9:19:57 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;2ed209f7-294b-414c-987e-7624e91d1e93&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;10/21/2018 5:52:27 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;f8d92d72-b666-4d9c-9f08-14e1728170c6&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;10/21/2018 5:50:02 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;c5d9c356-f4da-47b1-bc7c-08dbd668f130&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;10/21/2018 5:47:36 PM&lt;/td&gt;
+        &lt;td&gt;VMWARE&lt;/td&gt;
+        &lt;td&gt;8cbb3429-f2a8-4028-ade7-d883d8b32315&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    
+            
+             &lt;tr&gt;
+        &lt;td&gt;5/23/2019 11:09:34 PM&lt;/td&gt;
+        &lt;td&gt;NSGW&lt;/td&gt;
+        &lt;td&gt;3b85554d-539e-4ce6-82e2-899829e93c26&lt;/td&gt;
       &lt;/tr&gt;
       
     
