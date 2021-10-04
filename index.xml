@@ -89,7 +89,7 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
       
       <guid>https://trusselsky.github.io/secokt/</guid>
       <description>&lt;p&gt;Her kommer vi løpende med korte tips og tricks man kan gjøre for å øke sin sikkerhetshygiene. Målet er å komme med nye tips hver dag i hele Oktober!&lt;/p&gt;
-&lt;h2 id=&#34;1-oktober&#34;&gt;1 Oktober&lt;/h2&gt;
+&lt;h2 id=&#34;1-oktober---nettleser-kontroll&#34;&gt;1 Oktober - Nettleser kontroll&lt;/h2&gt;
 &lt;p&gt;En ting vi har sett mye av de siste årene har vært sårbarheter tilknyttet nettleseren. Dette er litt fordi at nettleseren er kontinuerlig under utvikling, nye web standarder som skal supporteres, nye funksjonalitet med add-ons og ikke minst skal bli tettere integrert med det underliggende operativsystemet for å kunne understøtte nye tjenester som WebRTC, WebGL, QUIC/HTTP3.&lt;/p&gt;
 &lt;p&gt;Nettleseren er også mye av hovedverktøyet til alle ansatte å må derfor viktig angrepsflate som må beskyttes. Så langt i år har Google Chrome hatt 13 (0-dags) sårbarheter med noen av disse har også blitt utnyttet for å gjennomføre angrep. Vi har også sett eksempler på hvor extensions som har hatt over 20 millioner brukere som har blitt brukt for innsamling av informasjon eller videresende brukere til phising nettsider. Så det er veldig viktig å ha kontroll på nettleseren i forhold til å ha oppdateringer automatisk samt kontroll på addons samt noen andre justeringer.&lt;/p&gt;
 &lt;p&gt;For Administrerte klienter kan dette styres via Group Policy som kan lastes ned her &amp;ndash;&amp;gt; &lt;a href=&#34;https://enterprise.google.com/chrome/chrome-browser/#download&#34;&gt;https://enterprise.google.com/chrome/chrome-browser/#download&lt;/a&gt; samt det finnes en egen Group Policy for styring av oppdateringer (&lt;a href=&#34;https://dl.google.com/update2/enterprise/googleupdateadmx.zip&#34;&gt;https://dl.google.com/update2/enterprise/googleupdateadmx.zip&lt;/a&gt;)&lt;/p&gt;
@@ -102,7 +102,23 @@ Alternativt om du har andre ideer, send meg gjerne en epost på &lt;a href=&#34;
 &lt;li&gt;Google &amp;ndash;&amp;gt; Google Update &amp;ndash;&amp;gt; Applications. Always Allow Updates (recommended)&lt;/li&gt;
 &lt;li&gt;Google &amp;ndash;&amp;gt; Google Update &amp;ndash;&amp;gt; Application &amp;ndash;&amp;gt; Google Chrome. Always Allow Updates (recommended)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2-oktober&#34;&gt;2 Oktober&lt;/h2&gt;
+&lt;h2 id=&#34;4-oktober---har-du-kontroll-på-dns&#34;&gt;4 Oktober - Har du kontroll på DNS?&lt;/h2&gt;
+&lt;p&gt;Hver eneste dag er det tusenvis av nye domener som blir registrerte hos ulike DNS registrarer. Majoriteten av disse nye domenene som blir opprettet er for mistenkelige formål, som enten brukes til phising angrep eller for andre formål.&lt;/p&gt;
+&lt;p&gt;Ref: &lt;a href=&#34;https://unit42.paloaltonetworks.com/newly-registered-domains-malicious-abuse-by-bad-actors/&#34;&gt;https://unit42.paloaltonetworks.com/newly-registered-domains-malicious-abuse-by-bad-actors/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mange domener har også kort levetid som ofte henger sammen med en phising kampanje som kjøres for å lure brukere mot f.eks. nettsider som skal imitere nettbanker, sosiale medier eller andre kjente nettsider for å få brukere til å oppgi sensitiv informasjon som brukernavn og passord.&lt;/p&gt;
+&lt;p&gt;Det er selvsagt veldig vanskelig å få blokkert alle domener som mulig blir opprettet en gang i fremtiden eller som er av mistenkelig art.&lt;/p&gt;
+&lt;p&gt;De fleste brannmurer har mulighet for å blokkere slike såkalte NSD (Newly Seen Domains) slik at de gjør et oppslag først mot den aktuelle WHOIS infoen for å se levetiden på domenet. Dette er derimot litt mer utfordrende når man sitter på hjemme nett eller andre lokasjoner hvor trafikken ikke går igjennom en sentral brannmur tjeneste.
+Det finnes derimot gratis tjeneste som kan automatisk blokkere både mot NSD samt domener som er av mistenkelig art.&lt;/p&gt;
+&lt;p&gt;Blant annet er det f.eks. Cloudflare og Cisco som begge tilbyr en gratis utgave av DNS tjenestene sine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloudflare: &lt;a href=&#34;https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families&#34;&gt;https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenDNS (Cisco): &lt;a href=&#34;https://support.opendns.com/hc/en-us/articles/227988127-Getting-started-About-using-OpenDNS&#34;&gt;https://support.opendns.com/hc/en-us/articles/227988127-Getting-started-About-using-OpenDNS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ellers så har også begge leverandører en kommersiell modell som kan brukes for organisasjoner. Fordelen med en slik DNS-tjeneste kontra andre er også at man får en desentralisert DNS tjeneste som vil virke uavhengig hvor brukeren/enheten befinner seg.  Samt at begge leverandørene er også de som leverer de raskeste DNS tjenesten.&lt;/p&gt;
+&lt;p&gt;Eksempelvis:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://trusselsky.github.io/dns.png&#34; alt=&#34;HTTP/3 Bruk&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Samtidig tilbyr også begge leverandørene DoH (DNS over HTTPS) som gjør at man kan gjøre DNS oppslag kryptert også. Slik at DNS trafikk også er kryptert for nettleseren. Merk at dette krever at nettleser eller det er innebygget funksjonalitet i operativsystemet. Som det blir nå med Windows 11 blant annet, mens de fleste nettleseren har støtte for det allerede. Men merk at sistnevnte kun gir krypert DNS oppslag for nettleser trafikk å ikke for alt annet av tjeneste kommunikasjon.&lt;/p&gt;
 &lt;p&gt;Har du noen tips til andre innstilliger man bør ha med? gi oss beskjed! &lt;a href=&#34;mailto:marius@trusselsky.no&#34;&gt;marius@trusselsky.no&lt;/a&gt;&lt;/p&gt;
 </description> 
     </item>
@@ -441,143 +457,6 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         
         
         
-            
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;82.212.109.79&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Hashemite Kingdom of Jordan&lt;/td&gt;
-        &lt;td&gt;11004&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;116.202.91.138&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;4351&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;95.52.245.65&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;3102&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;66.45.255.66&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;2378&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.241.19.240&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;1924&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;91.191.209.134&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Bulgaria&lt;/td&gt;
-        &lt;td&gt;1628&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;41.191.216.137&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Botswana&lt;/td&gt;
-        &lt;td&gt;992&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;154.16.169.58&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;699&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;40.80.93.165&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;686&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;113.160.182.66&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Vietnam&lt;/td&gt;
-        &lt;td&gt;632&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;92.58.80.38&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Spain&lt;/td&gt;
-        &lt;td&gt;478&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;78.63.76.65&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Lithuania&lt;/td&gt;
-        &lt;td&gt;461&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;58.225.57.229&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Korea&lt;/td&gt;
-        &lt;td&gt;410&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;94.232.43.67&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;376&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;93.115.136.56&lt;/td&gt;
-        &lt;td&gt;4625&lt;/td&gt;
-        &lt;td&gt;Republic of Moldova&lt;/td&gt;
-        &lt;td&gt;360&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;h3 id=&#34;feilet-pålogging-via-rdp---upn&#34;&gt;Feilet pålogging via RDP - UPN&lt;/h3&gt;
@@ -598,113 +477,6 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         
         
         
-            
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\administrator&lt;/td&gt;
-        &lt;td&gt;17280&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\ADMINISTRATOR&lt;/td&gt;
-        &lt;td&gt;10276&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\Administrator&lt;/td&gt;
-        &lt;td&gt;1418&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME01\Administrator&lt;/td&gt;
-        &lt;td&gt;1156&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\ADMIN&lt;/td&gt;
-        &lt;td&gt;652&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Administrador&lt;/td&gt;
-        &lt;td&gt;600&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Administrateur&lt;/td&gt;
-        &lt;td&gt;599&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME\Amministratore&lt;/td&gt;
-        &lt;td&gt;483&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME\Administrador&lt;/td&gt;
-        &lt;td&gt;482&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME\Administrateur&lt;/td&gt;
-        &lt;td&gt;481&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;HACKME\Administrator&lt;/td&gt;
-        &lt;td&gt;478&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;Hackme01\Admin&lt;/td&gt;
-        &lt;td&gt;254&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\admin&lt;/td&gt;
-        &lt;td&gt;221&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\Admin&lt;/td&gt;
-        &lt;td&gt;158&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;\hp&lt;/td&gt;
-        &lt;td&gt;158&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;h3 id=&#34;trafikk-port---land&#34;&gt;Trafikk port - Land&lt;/h3&gt;
@@ -726,88 +498,6 @@ Et eksempel som har blitt flagget er trafikk mot&lt;/p&gt;
         
         
         
-            
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;1758&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Spain&lt;/td&gt;
-        &lt;td&gt;669&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Korea&lt;/td&gt;
-        &lt;td&gt;476&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;432&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Lithuania&lt;/td&gt;
-        &lt;td&gt;374&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Germany&lt;/td&gt;
-        &lt;td&gt;374&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Moldova&lt;/td&gt;
-        &lt;td&gt;369&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;320&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Canada&lt;/td&gt;
-        &lt;td&gt;246&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
-            
-             &lt;tr&gt;
-        &lt;td&gt;3389&lt;/td&gt;
-        &lt;td&gt;Italy&lt;/td&gt;
-        &lt;td&gt;211&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;h3 id=&#34;app-registration&#34;&gt;App Registration&lt;/h3&gt;
